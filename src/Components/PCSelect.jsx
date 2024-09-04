@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Select from "react-select";
 import "../Styles/PCSelect.css"; // Ensure this path is correct
 import pc1 from "../Assets/pc1.png"; // Ensure this path is correct

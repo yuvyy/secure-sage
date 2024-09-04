@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import CategoryDisplay from "../Components/CategoryDisplay";
 import SearchComponent from "../Components/SearchComponent";
@@ -602,6 +602,16 @@ const ScanInfoPage = () => {
   const handleSubmit = async () => {
     try {
       // Log the checkList for demonstration
+      const response = await fetch('http://localhost:5000/api/receive_array', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(checkList),
+      });
+
+      const result = await response.json();
+      console.log('Response from API:', result);
       console.log(checkList);
 
       // Redirect to /results with checkList
@@ -613,6 +623,7 @@ const ScanInfoPage = () => {
 
   return (
     <div className="scan-info-page">
+      <h2>Selected PCS: {selectedItems}</h2>
       <div className="content1-wrapper">
         <CategoryDisplay
           categories={data}
