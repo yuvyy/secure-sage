@@ -1,0 +1,5 @@
+Name,RegistryPath,ValueName,ExpectedValue
+Enforce password history,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,PasswordHistorySize,24
+Maximum password age,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,MaxPasswordAge,365
+Minimum password age,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,MinPasswordAge,1
+Load and unload device drivers,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,LoadUnloadDeviceDrivers,Administrators

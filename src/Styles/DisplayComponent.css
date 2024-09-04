@@ -1,0 +1,42 @@
+.display-component {
+  padding: 16px;
+  background-color: #bebebe; /* Equivalent to bg-white */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-md */
+  margin-left: 40px;
+  margin-top: 20px;
+  color: black;
+  max-height: 400px; /* Set a max height for the component */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal overflow if needed */
+}
+
+.display-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  padding: 8px;
+  text-align: left;
+  background-color: #f3f4f6; /* Equivalent to bg-gray-200 */
+  position: sticky; /* Keep the header sticky while scrolling */
+  top: 0;
+  z-index: 1; /* Ensure the header stays above the content */
+}
+
+.table-row {
+  border-top: 1px solid #e5e7eb; /* Equivalent to border-t */
+}
+
+.table-cell {
+  padding: 8px;
+}
+
+.checkbox {
+  height: 25px;
+  width: 25px;
+  border: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
+  border-radius: 4px;
+  accent-color: #3b82f6; /* Equivalent to text-blue-600 */
+}
