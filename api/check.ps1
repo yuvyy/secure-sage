@@ -40,11 +40,12 @@ $output = [PSCustomObject]@{
 }
 
 # Generate the filename with a timestamp
-$timestamp = (Get-Date).ToString("dd-MM-yyyy_HH-mm-ss")
-$filename = "output_$timestamp.json"
+# $timestamp = (Get-Date).ToString("dd-MM-yyyy_HH-mm-ss")
+# $filename = "output_$timestamp.json"
+$filename = "output.json"
 
 # Convert to JSON and save to file
-# $output | ConvertTo-Json -Depth 4 | Out-File -FilePath $filename
-$output | ConvertTo-Json | Write-Output
+$output | ConvertTo-Json -Depth 4 | Out-File -FilePath $filename
+# $output | ConvertTo-Json | Write-Output
 
-# Write-Output "Results saved to $filename"
+Write-Output "Results saved to $filename"

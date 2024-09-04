@@ -602,20 +602,20 @@ const ScanInfoPage = () => {
   const handleSubmit = async () => {
     try {
       // Log the checkList for demonstration
-      const response = await fetch('http://localhost:5000/api/receive_array', {
+      const response = await fetch('http://localhost:5000/receive_array', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
           },
           body: JSON.stringify(checkList),
-      });
-
-      const result = await response.json();
-      console.log('Response from API:', result);
-      console.log(checkList);
-
+        });
+        
+        const result = await response.json();
+        console.log('Response from API:', result);
+        console.log(checkList);
+        
+        navigate("/results", { state: { result } });
       // Redirect to /results with checkList
-      navigate("/results", { state: { checkList } });
     } catch (error) {
       console.error("Error sending data:", error);
     }

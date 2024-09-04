@@ -2,7 +2,7 @@ import csv
 
 def filter_csv_by_names(names):
 
-    with open('all_checks.csv', 'r', newline='') as infile, open('checks.csv', 'w', newline='') as outfile:
+    with open('all_checks.csv', 'r', newline='',encoding='utf-8') as infile, open('checks.csv', 'w', newline='',encoding='utf-8') as outfile:
         reader = csv.DictReader(infile)
         writer = csv.DictWriter(outfile, fieldnames=reader.fieldnames)
         writer.writeheader()
