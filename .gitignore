@@ -23,6 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# flask stuff
+
 venv
 __pycache__
