@@ -6,10 +6,10 @@ import { Label, Pie, PieChart } from "recharts"
 import {
   Card,
   CardContent,
-  CardDescription,
+  // CardDescription,
   CardFooter,
-  CardHeader,
-  CardTitle,
+  // CardHeader,
+  // CardTitle,
 } from "@/components/ui/card"
 import {
   ChartContainer,
@@ -20,44 +20,40 @@ import {
 export const description = "A donut chart with text"
 
 const chartData = [
-  { result: "pass", visitors: 275, fill: "var(--color-chrome)" },
-  { result: "fail", visitors: 200, fill: "var(--color-safari)" },
+  { result: "pass", number: 300, fill: "var(--color-chrome)" },
+  { result: "fail", number: 120, fill: "var(--color-safari)" },
 ]
 
 const chartConfig = {
   visitors: {
-    label: "Visitors",
+    label: "Pass",
   },
   chrome: {
-    label: "Chrome",
-    color: "hsl(var(--chart-1))",
+    label: "Pass",
+    color: "hsl(var(--primary))",
   },
   safari: {
-    label: "Safari",
-    color: "hsl(var(--chart-2))",
+    label: "Fail",
+    color: "hsl(var(--destructive))",
   }
 }
 
 export default function TotalPieChart() {
-  const totalVisitors = React.useMemo(() => {
-    return chartData.reduce((acc, curr) => acc + curr.visitors, 0)
+  const totalTests = React.useMemo(() => {
+    return chartData.reduce((acc, curr) => acc + curr.number, 0)
   }, [])
 
   return (
     <Card className="flex flex-col">
-      <CardHeader className="items-center pb-0">
-        <CardTitle>Pie Chart - Donut with Text</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
-      </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer config={chartConfig} className="mx-auto aspect-square max-h-[250px]">
           <PieChart>
             <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
             <Pie
               data={chartData}
-              dataKey="visitors"
-              nameKey="browser"
-              innerRadius={60}
+              dataKey="number"
+              nameKey="result"
+              innerRadius={65}
               strokeWidth={5}
             >
               <Label
@@ -66,10 +62,10 @@ export default function TotalPieChart() {
                     return (
                       <text x={viewBox.cx} y={viewBox.cy} textAnchor="middle" dominantBaseline="middle">
                         <tspan x={viewBox.cx} y={viewBox.cy} className="fill-foreground text-3xl font-bold">
-                          {totalVisitors.toLocaleString()}
+                          {totalTests.toLocaleString()}
                         </tspan>
                         <tspan x={viewBox.cx} y={viewBox.cy + 24} className="fill-muted-foreground">
-                          Visitors
+                          Tests
                         </tspan>
                       </text>
                     )

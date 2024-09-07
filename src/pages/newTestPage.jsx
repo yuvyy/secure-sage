@@ -5,11 +5,12 @@ import TestSelector from "@/Components/testSelector";
 import { Button } from "@/Components/ui/button";
 import { Input } from "@/Components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/ui/tabs";
+import { Link } from "react-router-dom";
 
 export default function NewTestPage() {
   return (
     <>
-      <header className="mb-4">
+      <header>
         <Header />
       </header>
       <main className="mx-20 border p-4 shadow-md rounded-lg">
@@ -51,7 +52,9 @@ export default function NewTestPage() {
             <p className="text-muted-foreground">No tests selected.</p>
           </div>
           <div className='flex justify-center'>
-          <Button className='text-xl'>Submit</Button>
+          <Button className='text-xl' asChild>
+            <Link to='/result'>Submit</Link>
+          </Button>
           </div>
         </div>
       </main>

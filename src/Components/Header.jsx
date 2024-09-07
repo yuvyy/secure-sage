@@ -1,16 +1,29 @@
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 
 export default function Header() {
   return (
-    <div className="p-2 shadow-lg flex justify-between items-center">
+    <div className="p-2 shadow-lg flex justify-between items-center mb-4">
       <div className="border-primary  rounded-lg p-2 pb-3">
         <h2 className=" font-semibold text-4xl text-primary">SecureSage</h2>
       </div>
       <nav>
         <ul className="flex gap-10">
-          <Button variant='link' className='text-lg'>Home</Button>
-          <Button variant='link' className='text-lg'>Reports</Button>
-          <Button variant='link' className='text-lg'>About Us</Button>
+          <Button variant="link" className="text-lg" asChild>
+            <Link to="/" variant="link" className="text-lg">
+              Home
+            </Link>
+          </Button>
+          <Button variant="link" className="text-lg" asChild>
+            <Link to="/reports" variant="link" className="text-lg">
+              Reports
+            </Link>
+          </Button>
+          <Button variant="link" className="text-lg" asChild>
+            <Link to='/aboutUs'>
+              About Us
+            </Link>
+          </Button>
         </ul>
       </nav>
       <div className="border-primary  rounded-lg p-2 pb-3">

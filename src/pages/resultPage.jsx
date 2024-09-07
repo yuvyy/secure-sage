@@ -1,15 +1,15 @@
 import CategoricalBarChart from "@/Components/categoricalBarChart";
 import Header from "@/Components/Header";
-import TotalPieChart from "@/Components/pieChart";
+import TotalPieChart from "@/Components/totalPieChart";
 import { Button } from "@/Components/ui/button";
 
 export default function ResultPage() {
   return (
     <>
-      <header className="mb-2">
+      <header>
         <Header />
       </header>
-      <main className="mx-16">
+      <main className="mx-20">
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-12 grid-rows-20 gap-3">
               <div className="center flex flex-col gap-4 border rounded-md shadow-md p-4 h-max col-span-4 row-span-2">
