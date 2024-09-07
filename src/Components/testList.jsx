@@ -1,7 +1,7 @@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "./ui/separator";
 
-export default function TestTable({
+export default function testList({
   category,
   handleItemCheck,
   handleSelectAll,

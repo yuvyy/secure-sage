@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "./ui/scroll-area";
-import TestTable from "./testTable";
+import TestList from "./testList";
 import React from "react";
 
 const data = [
@@ -638,7 +638,7 @@ export default function TestSelector() {
             <ScrollArea className="h-[350px] w-[700px]">
               {data.map((cat) => (
                 <TabsContent key={cat.category} value={cat.category}>
-                  <TestTable
+                  <TestList
                     category={cat}
                     handleItemCheck={handleItemCheck}
                     handleSelectAll={handleSelectAll}
