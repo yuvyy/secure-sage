@@ -5,9 +5,19 @@ import TestSelector from "@/Components/testSelector";
 import { Button } from "@/Components/ui/button";
 import { Input } from "@/Components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/ui/tabs";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export default function NewTestPage() {
+
+  const [submittedData, setSubmittedData] = React.useState('');
+
+  // Function to handle the data passed from the child
+  const handleDataFromChild = (data) => {
+    setSubmittedData(data);
+    console.log("Data received from child:", data);
+  };
+
   return (
     <>
       <header>
@@ -48,11 +58,11 @@ export default function NewTestPage() {
             </div>
           </Tabs>
           <div className="flex gap-2 items-center">
-            <TestSelector />
+            <TestSelector onSubmit={handleDataFromChild} />
             <p className="text-muted-foreground">No tests selected.</p>
           </div>
           <div className='flex justify-center'>
-          <Button className='text-xl' asChild>
+          <Button className='text-xl' type="submit" asChild>
             <Link to='/result'>Submit</Link>
           </Button>
           </div>

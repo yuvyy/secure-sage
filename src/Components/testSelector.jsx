@@ -575,7 +575,9 @@ const data = [
   },
 ];
 
-export default function TestSelector() {
+export default function TestSelector(
+  {onSubmit}
+) {
   const [checkedItems, setCheckedItems] = React.useState({});
 
   React.useEffect(() => {
@@ -612,12 +614,18 @@ export default function TestSelector() {
     });
   };
 
+  // const handleSubmit = () =>
+  // {
+  //   onSubmit(checkedItems);
+  // };
+
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button variant="outline">Select Tests</Button>
       </DialogTrigger>
       <DialogContent className="max-w-5xl">
+      <>
         <DialogHeader>
           <DialogTitle>Tests</DialogTitle>
           <DialogDescription>Select tests to be performed.</DialogDescription>
@@ -651,8 +659,9 @@ export default function TestSelector() {
           </Tabs>
         </div>
         <DialogFooter>
-          <Button type="submit">Select</Button>
+          <Button onClick={onSubmit(checkedItems)}>Select</Button>
         </DialogFooter>
+      </>
       </DialogContent>
     </Dialog>
   );
