@@ -17,24 +17,24 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 
-export const description = "A stacked bar chart with a legend"
+// export const description = "A stacked bar chart with a legend"
 
 const chartData = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
+  { month: "January", pass: 186, fail: 80 },
+  { month: "February", pass: 305, fail: 200 },
+  { month: "March", pass: 237, fail: 120 },
+  { month: "April", pass: 73, fail: 190 },
+  { month: "May", pass: 209, fail: 130 },
+  { month: "June", pass: 214, fail: 140 },
 ]
 
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
+  pass: {
+    label: "Pass",
     color: "hsl(var(--primary))",
   },
-  mobile: {
-    label: "Mobile",
+  fail: {
+    label: "Fail",
     color: "hsl(var(--destructive))",
   },
 }
@@ -43,8 +43,8 @@ export default function CategoricalBarChart() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Bar Chart - Stacked + Legend</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Categorical Bar Chart</CardTitle>
+        <CardDescription>Date and Time Stamp</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -60,29 +60,29 @@ export default function CategoricalBarChart() {
             <ChartTooltip content={<ChartTooltipContent hideLabel />} />
             <ChartLegend content={<ChartLegendContent />} />
             <Bar
-              dataKey="desktop"
+              dataKey="pass"
               stackId="a"
-              fill="var(--color-desktop)"
+              fill="var(--color-pass)"
               radius={[0, 0, 4, 4]}
               barSize={75}
             />
             <Bar
-              dataKey="mobile"
+              dataKey="fail"
               stackId="a"
-              fill="var(--color-mobile)"
+              fill="var(--color-fail)"
               radius={[4, 4, 0, 0]}
             />
           </BarChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter className="flex-col items-start gap-2 text-sm">
+      {/* <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
           Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
           Showing total visitors for the last 6 months
         </div>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   )
 }

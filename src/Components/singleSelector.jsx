@@ -18,9 +18,20 @@ const singles = [
   { value: "pc2", label: "pc2" },
 ];
 
-export default function SingleSelector() {
+export default function SingleSelector({ onSelect }) {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
+
+  // Function to handle selection
+  const handleSelect = (currentValue) => {
+    const newValue = currentValue === value ? "" : currentValue;
+    setValue(newValue);
+    setOpen(false);
+    if (onSelect) {
+      onSelect(newValue); // Pass the selected value to the parent
+    }
+  };
+
   return (
     <div className="flex flex-col gap-4">
       <label className="text-lg">System Name</label>
@@ -30,10 +41,9 @@ export default function SingleSelector() {
             variant="outline"
             role="combobox"
             aria-expanded={open}
-            className="w-[200px] justify-between"
-          >
+            className="w-[200px] justify-between">
             {value
-              ? singles.find((framework) => framework.value === value)?.label
+              ? singles.find((item) => item.value === value)?.label
               : "Select Systems"}
             <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
           </Button>
@@ -44,22 +54,18 @@ export default function SingleSelector() {
             <CommandList>
               <CommandEmpty>No system found.</CommandEmpty>
               <CommandGroup>
-                {singles.map((framework) => (
+                {singles.map((item) => (
                   <CommandItem
-                    key={framework.value}
-                    value={framework.value}
-                    onSelect={(currentValue) => {
-                      setValue(currentValue === value ? "" : currentValue);
-                      setOpen(false);
-                    }}
-                  >
+                    key={item.value}
+                    value={item.value}
+                    onSelect={() => handleSelect(item.value)}>
                     <Check
                       className={cn(
                         "mr-2 h-4 w-4",
-                        value === framework.value ? "opacity-100" : "opacity-0"
+                        value === item.value ? "opacity-100" : "opacity-0"
                       )}
                     />
-                    {framework.label}
+                    {item.label}
                   </CommandItem>
                 ))}
               </CommandGroup>
