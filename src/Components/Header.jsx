@@ -1,19 +1,21 @@
-import React from "react";
+import { Button } from "./ui/button";
 
 export default function Header() {
   return (
     <div className="p-2 shadow-lg flex justify-between items-center">
-      <div className="bg-blue-800 rounded-lg p-2 pb-3">
-        <h2 className=" font-semibold text-4xl">SecureSage</h2>
+      <div className="border-primary  rounded-lg p-2 pb-3">
+        <h2 className=" font-semibold text-4xl text-primary">SecureSage</h2>
       </div>
       <nav>
         <ul className="flex gap-10">
-          <li className="text-blue-900 text-xl">Home</li>
-          <li className="text-blue-900 text-xl">Reports</li>
-          <li className="text-blue-900 text-xl">About Us</li>
+          <Button variant='link' className='text-lg'>Home</Button>
+          <Button variant='link' className='text-lg'>Reports</Button>
+          <Button variant='link' className='text-lg'>About Us</Button>
         </ul>
       </nav>
-      <div></div>
+      <div className="border-primary  rounded-lg p-2 pb-3">
+        <h2 className=" font-semibold text-4xl text-card">SecureSage</h2>
+      </div>
       {/* <h2 className="text-blue-900 text-2xl font-medium">SIH</h2> */}
     </div>
   );

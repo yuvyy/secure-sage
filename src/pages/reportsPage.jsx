@@ -1,5 +1,5 @@
-import React from "react";
 import Header from "../components/header";
+import TestTable from "@/Components/testTable";
 
 export default function ReportsPage() {
   return (
@@ -8,7 +8,7 @@ export default function ReportsPage() {
         <Header />
       </header>
       <main>
-        
+        <TestTable/>
       </main>
     </div>
   );
