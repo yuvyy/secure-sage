@@ -1,0 +1,3 @@
+Name,RegistryPath,ValueName,ExpectedValue
+Bluetooth Audio Gateway Service (BTAGService),HKLM:\SYSTEM\CurrentControlSet\Services\BTAGService,Start,4
+Bluetooth Support Service (bthserv),HKLM:\SYSTEM\CurrentControlSet\Services\bthserv,Start,4

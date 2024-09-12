@@ -1,0 +1,535 @@
+Name,RegistryPath,ValueName,ExpectedValue
+Enforce password history,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,PasswordHistorySize,24
+Maximum password age,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,MaxPasswordAge,365
+Minimum password age,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,MinPasswordAge,1
+Minimum password length,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,MinPasswordLength,14
+Password must meet complexity requirements,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,PasswordComplexity,1
+Relax minimum password length limits,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,RelaxMinimumPasswordLength,1
+Store passwords using reversible encryption,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,StorePasswordReversibleEncryption,0
+Account lockout duration,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,LockoutDuration,15
+Account lockout threshold,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,LockoutThreshold,5
+Allow Administrator account lockout,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,AllowAdminAccountLockout,1
+Reset account lockout counter after,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Password,LockoutCounterReset,15
+Access Credential Manager as a trusted caller,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CredentialManager,TrustedCaller,No One
+Access this computer from the network,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,AccessFromNetwork,Administrators; Remote Desktop Users
+Act as part of the operating system,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ActAsPartOfOperatingSystem,No One
+Adjust memory quotas for a process,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,AdjustMemoryQuota,Administrators; LOCAL SERVICE; NETWORK SERVICE
+Allow log on locally,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,LogonLocally,Administrators; Users
+Allow log on through Remote Desktop Services,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,LogonThroughRDP,Administrators; Remote Desktop Users
+Back up files and directories,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,BackupFiles,Administrators
+Change the system time,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ChangeSystemTime,Administrators; LOCAL SERVICE
+Change the time zone,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ChangeTimeZone,Administrators; LOCAL SERVICE; Users
+Create a pagefile,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,CreatePagefile,Administrators
+Create a token object,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,CreateTokenObject,No One
+Create global objects,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,CreateGlobalObjects,Administrators; LOCAL SERVICE; NETWORK SERVICE; SERVICE
+Create permanent shared objects,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,CreatePermanentSharedObjects,No One
+Create symbolic links,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,CreateSymbolicLinks
+Debug programs,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,DebugPrograms,Administrators
+Deny access to this computer from the network,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,DenyAccessFromNetwork,Guests
+Deny log on as a batch job,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,DenyLogonAsBatchJob,Guests
+Deny log on as a service,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,DenyLogonAsService,Guests
+Deny log on locally,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,DenyLogonLocally,Guests
+Deny log on through Remote Desktop Services,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,DenyLogonThroughRDP,Guests
+Enable computer and user accounts to be trusted for delegation,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,TrustedForDelegation,No One
+Force shutdown from a remote system,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ForceShutdownRemote,Administrators
+Generate security audits,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,GenerateSecurityAudits,LOCAL SERVICE; NETWORK SERVICE
+Name,RegistryPath,ValueName,ExpectedValue
+Impersonate a client after authentication,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ImpersonateClientAfterAuth,Administrators; LOCAL SERVICE; NETWORK SERVICE; SERVICE
+Increase scheduling priority,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,IncreaseSchedulingPriority,Administrators; Window Manager\Window Manager Group
+Load and unload device drivers,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,LoadUnloadDeviceDrivers,Administrators
+Lock pages in memory,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,LockPagesInMemory,No One
+Log on as a batch job,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,LogonAsBatchJob,Administrators
+Log on as a service,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,LogonAsService
+Manage auditing and security log,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ManageAuditSecurityLog,Administrators
+Modify an object label,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ModifyObjectLabel,No One
+Modify firmware environment values,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ModifyFirmwareValues,Administrators
+Perform volume maintenance tasks,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,PerformVolumeMaintenance,Administrators
+Profile single process,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ProfileSingleProcess,Administrators
+Profile system performance,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ProfileSystemPerformance,Administrators; NT SERVICE\WdiServiceHost
+Replace a process level token,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ReplaceProcessLevelToken,LOCAL SERVICE; NETWORK SERVICE
+Restore files and directories,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,RestoreFilesDirectories,Administrators
+Shut down the system,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ShutdownSystem,Administrators; Users
+Take ownership of files or other objects,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,TakeOwnership,Administrators
+Accounts: Block Microsoft accounts,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,BlockMicrosoftAccounts,Users can't add or log on with Microsoft accounts
+Accounts: Guest account status,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,GuestAccountStatus,Disabled
+Accounts: Limit local account use of blank passwords to console logon only,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,LimitBlankPasswordsConsole,Enabled
+Accounts: Rename administrator account,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,RenameAdministratorAccount
+Accounts: Rename guest account,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,RenameGuestAccount
+Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,AuditForceSubcategorySettings,Enabled
+Audit: Shut down system immediately if unable to log security audits,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,AuditShutDownIfNoSecurityAudits,Disabled
+Devices: Prevent users from installing printer drivers,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,PreventPrinterDriverInstallation,Enabled
+Interactive logon: Do not require CTRL+ALT+DEL,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NoCtrlAltDel,Disabled
+Interactive logon: Don't display last signed in,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,Don'tDisplayLastSignedIn,Enabled
+Interactive logon: Machine account lockout threshold,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,MachineAccountLockoutThreshold,10
+Interactive logon: Machine inactivity limit,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,MachineInactivityLimit,900
+Interactive logon: Message text for users attempting to log on,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,LogonMessageText
+Interactive logon: Message title for users attempting to log on,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,LogonMessageTitle
+Interactive logon: Prompt user to change password before expiration,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,ChangePasswordBeforeExpiration,between 5 and 14 days
+Name,RegistryPath,ValueName,ExpectedValue
+Interactive logon: Smart card removal behavior,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,SmartCardRemovalBehavior,Lock Workstation or higher
+Microsoft network client: Digitally sign communications (always),HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,MicrosoftNetworkClientSignCommunicationsAlways,Enabled
+Microsoft network client: Digitally sign communications (if server agrees),HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,MicrosoftNetworkClientSignCommunicationsIfServerAgrees,Enabled
+Microsoft network client: Send unencrypted password to third-party SMB servers,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,MicrosoftNetworkClientSendUnencryptedPassword,Disabled
+Microsoft network server: Amount of idle time required before suspending session,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,MicrosoftNetworkServerIdleTimeout,15
+Microsoft network server: Digitally sign communications (always),HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,MicrosoftNetworkServerSignCommunicationsAlways,Enabled
+Microsoft network server: Digitally sign communications (if client agrees),HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,MicrosoftNetworkServerSignCommunicationsIfClientAgrees,Enabled
+Microsoft network server: Disconnect clients when logon hours expire,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,MicrosoftNetworkServerDisconnectWhenLogonHoursExpire,Enabled
+Microsoft network server: Server SPN target name validation level,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,MicrosoftNetworkServerSPNValidationLevel,Accept if provided by client
+Network access: Allow anonymous SID/Name translation,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessAllowAnonymousSIDNameTranslation,Disabled
+Network access: Do not allow anonymous enumeration of SAM accounts,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessDoNotAllowAnonymousSAMEnumeration,Enabled
+Network access: Do not allow anonymous enumeration of SAM accounts and shares,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessDoNotAllowAnonymousSAMAndSharesEnumeration,Enabled
+Network access: Do not allow storage of passwords and credentials for network authentication,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessDoNotAllowStorageOfPasswords,Enabled
+Network access: Let Everyone permissions apply to anonymous users,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessLetEveryonePermissionsApplyToAnonymous,Disabled
+Network access: Named Pipes that can be accessed anonymously,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessNamedPipesAnonymousAccess,None
+Network access: Remotely accessible registry paths,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessRemotelyAccessibleRegistryPaths
+Network access: Remotely accessible registry paths and sub-paths,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessRemotelyAccessibleRegistryPathsSubPaths
+Network access: Restrict anonymous access to Named Pipes and Shares,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessRestrictAnonymousAccess,Enabled
+Network access: Restrict clients allowed to make remote calls to SAM,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessRestrictClientsSAM,Administrators: Remote Access: Allow
+Network access: Shares that can be accessed anonymously,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessSharesAnonymousAccess,None
+Network access: Sharing and security model for local accounts,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkAccessSharingModelLocalAccounts,Classic - local users authenticate as themselves
+Network security: Allow Local System to use computer identity for NTLM,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityAllowLocalSystemNTLMIdentity,Enabled
+Name,RegistryPath,ValueName,ExpectedValue
+Network security: Allow LocalSystem NULL session fallback,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityAllowLocalSystemNULLSessionFallback,Disabled
+Network Security: Allow PKU2U authentication requests to this computer to use online identities,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityAllowPKU2UOnlineIdentities,Disabled
+Network security: Configure encryption types allowed for Kerberos,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityKerberosEncryptionTypes,AES128_HMAC_SHA1, AES256_HMAC_SHA1, Future encryption types
+Network security: Do not store LAN Manager hash value on next password change,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityDoNotStoreLMHashOnPasswordChange,Enabled
+Network security: Force logoff when logon hours expire,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityForceLogoffWhenLogonHoursExpire,Enabled
+Network security: LAN Manager authentication level,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityLANManagerAuthLevel,Send NTLMv2 response only. Refuse LM & NTLM
+Network security: LDAP client signing requirements,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityLDAPClientSigningRequirements,Negotiate signing
+Network security: Minimum session security for NTLM SSP based (including secure RPC) clients,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityMinimumSessionSecurityNTLMSSPClients,Require NTLMv2 session security, Require 128-bit encryption
+Network security: Minimum session security for NTLM SSP based (including secure RPC) servers,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityMinimumSessionSecurityNTLMSSPServers,Require NTLMv2 session security, Require 128-bit encryption
+Network security: Restrict NTLM: Audit Incoming NTLM Traffic,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityRestrictNTLMAuditIncomingNTLM,Enable auditing for all accounts
+Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,NetworkSecurityRestrictNTLMOutgoingTraffic,Audit all
+System cryptography: Force strong key protection for user keys stored on the computer,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,SystemCryptographyStrongKeyProtection,User is prompted when the key is first used
+System objects: Require case insensitivity for non-Windows subsystems,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,SystemObjectsCaseInsensitivity,Enabled
+System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links),HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,SystemObjectsStrengthenDefaultPermissions,Enabled
+User Account Control: Admin Approval Mode for the Built-in Administrator account,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,UACAdminApprovalModeForBuiltInAdministrator,Enabled
+User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,UACBehaviorOfElevationPromptForAdmins,Prompt for consent on the secure desktop
+User Account Control: Behavior of the elevation prompt for standard users,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,UACBehaviorOfElevationPromptForStandardUsers,Automatically deny elevation requests
+User Account Control: Detect application installations and prompt for elevation,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,UACDetectApplicationInstallationsPromptForElevation,Enabled
+User Account Control: Only elevate UIAccess applications that are installed in secure locations,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Policies\System,UACOnlyElevateUIAccessApplicationsSecureLocations,Enabled
+User Account Control: Run all administrators in Admin Approval Mode,HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,EnableLUA,1
+User Account Control: Switch to the secure desktop when prompting for elevation,HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,PromptOnSecureDesktop,1
+User Account Control: Virtualize file and registry write failures to per-user locations,HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,EnableVirtualization,1
+Bluetooth Audio Gateway Service (BTAGService),HKLM:\SYSTEM\CurrentControlSet\Services\BTAGService,Start,4
+Bluetooth Support Service (bthserv),HKLM:\SYSTEM\CurrentControlSet\Services\bthserv,Start,4
+Computer Browser (Browser),HKLM:\SYSTEM\CurrentControlSet\Services\Browser,Start,4
+Downloaded Maps Manager (MapsBroker),HKLM:\SYSTEM\CurrentControlSet\Services\MapsBroker,Start,4
+Geolocation Service (lfsvc),HKLM:\SYSTEM\CurrentControlSet\Services\lfsvc,Start,4
+IIS Admin Service (IISADMIN),HKLM:\SYSTEM\CurrentControlSet\Services\IISADMIN,Start,4
+Infrared monitor service (irmon),HKLM:\SYSTEM\CurrentControlSet\Services\irmon,Start,4
+Link-Layer Topology Discovery Mapper (lltdsvc),HKLM:\SYSTEM\CurrentControlSet\Services\lltdsvc,Start,4
+LxssManager (LxssManager),HKLM:\SYSTEM\CurrentControlSet\Services\LxssManager,Start,4
+Microsoft FTP Service (FTPSVC),HKLM:\SYSTEM\CurrentControlSet\Services\FTPSVC,Start,4
+Microsoft iSCSI Initiator Service (MSiSCSI),HKLM:\SYSTEM\CurrentControlSet\Services\MSiSCSI,Start,4
+OpenSSH SSH Server (sshd),HKLM:\SYSTEM\CurrentControlSet\Services\sshd,Start,4
+Peer Name Resolution Protocol (PNRPsvc),HKLM:\SYSTEM\CurrentControlSet\Services\PNRPsvc,Start,4
+Peer Networking Grouping (p2psvc),HKLM:\SYSTEM\CurrentControlSet\Services\p2psvc,Start,4
+Peer Networking Identity Manager (p2pimsvc),HKLM:\SYSTEM\CurrentControlSet\Services\p2pimsvc,Start,4
+PNRP Machine Name Publication Service (PNRPAutoReg),HKLM:\SYSTEM\CurrentControlSet\Services\PNRPAutoReg,Start,4
+Print Spooler (Spooler),HKLM:\SYSTEM\CurrentControlSet\Services\Spooler,Start,4
+Problem Reports and Solutions Control Panel Support (wercplsupport),HKLM:\SYSTEM\CurrentControlSet\Services\wercplsupport,Start,4
+Remote Access Auto Connection Manager (RasAuto),HKLM:\SYSTEM\CurrentControlSet\Services\RasAuto,Start,4
+Remote Desktop Configuration (SessionEnv),HKLM:\SYSTEM\CurrentControlSet\Services\SessionEnv,Start,4
+Remote Desktop Services (TermService),HKLM:\SYSTEM\CurrentControlSet\Services\TermService,Start,4
+Remote Desktop Services UserMode Port Redirector (UmRdpService),HKLM:\SYSTEM\CurrentControlSet\Services\UmRdpService,Start,4
+Remote Procedure Call (RPC) Locator (RpcLocator),HKLM:\SYSTEM\CurrentControlSet\Services\RpcLocator,Start,4
+Remote Registry (RemoteRegistry),HKLM:\SYSTEM\CurrentControlSet\Services\RemoteRegistry,Start,4
+Routing and Remote Access (RemoteAccess),HKLM:\SYSTEM\CurrentControlSet\Services\RemoteAccess,Start,4
+Server (LanmanServer),HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer,Start,4
+Simple TCP/IP Services (simptcp),HKLM:\SYSTEM\CurrentControlSet\Services\simptcp,Start,4
+SNMP Service (SNMP),HKLM:\SYSTEM\CurrentControlSet\Services\SNMP,Start,4
+Special Administration Console Helper (sacsvr),HKLM:\SYSTEM\CurrentControlSet\Services\sacsvr,Start,4
+SSDP Discovery (SSDPSRV),HKLM:\SYSTEM\CurrentControlSet\Services\SSDPSRV,Start,4
+UPnP Device Host (upnphost),HKLM:\SYSTEM\CurrentControlSet\Services\upnphost,Start,4
+Web Management Service (WMSvc),HKLM:\SYSTEM\CurrentControlSet\Services\WMSvc,Start,4
+Windows Error Reporting Service (WerSvc),HKLM:\SYSTEM\CurrentControlSet\Services\WerSvc,Start,4
+Windows Event Collector (Wecsvc),HKLM:\SYSTEM\CurrentControlSet\Services\Wecsvc,Start,4
+Windows Media Player Network Sharing Service (WMPNetworkSvc),HKLM:\SYSTEM\CurrentControlSet\Services\WMPNetworkSvc,Start,4
+Windows Mobile Hotspot Service (icssvc),HKLM:\SYSTEM\CurrentControlSet\Services\icssvc,Start,4
+Windows Push Notifications System Service (WpnService),HKLM:\SYSTEM\CurrentControlSet\Services\WpnService,Start,4
+Windows PushToInstall Service (PushToInstall),HKLM:\SYSTEM\CurrentControlSet\Services\PushToInstall,Start,4
+Windows Remote Management (WSManagement) (WinRM),HKLM:\SYSTEM\CurrentControlSet\Services\WinRM,Start,4
+World Wide Web Publishing Service (W3SVC),HKLM:\SYSTEM\CurrentControlSet\Services\W3SVC,Start,4
+Xbox Accessory Management Service (XboxGipSvc),HKLM:\SYSTEM\CurrentControlSet\Services\XboxGipSvc,Start,4
+Xbox Live Auth Manager (XblAuthManager),HKLM:\SYSTEM\CurrentControlSet\Services\XblAuthManager,Start,4
+Xbox Live Game Save (XblGameSave),HKLM:\SYSTEM\CurrentControlSet\Services\XblGameSave,Start,4
+Xbox Live Networking Service (XboxNetApiSvc),HKLM:\SYSTEM\CurrentControlSet\Services\XboxNetApiSvc,Start,4
+Windows Firewall: Private: Firewall state,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile,EnableFirewall,1
+Windows Firewall: Private: Inbound connections,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile,DefaultInboundAction,1
+Windows Firewall: Private: Settings: Display a notification,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile,EnableNotifications,0
+Windows Firewall: Private: Logging: Name,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile,LogFileName,%SystemRoot%\System32\logfiles\firewall\privatefw.log
+Windows Firewall: Private: Logging: Size limit (KB),HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile,LogMaxSizeKB,16384
+Windows Firewall: Private: Logging: Log dropped packets,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile,LogDroppedPackets,1
+Windows Firewall: Private: Logging: Log successful connections,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile,LogSuccessfulConnections,1
+Windows Firewall: Public: Firewall state,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile,EnableFirewall,1
+Windows Firewall: Public: Inbound connections,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile,DefaultInboundAction,1
+Windows Firewall: Public: Settings: Display a notification,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile,EnableNotifications,0
+Windows Firewall: Public: Settings: Apply local firewall rules,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile,ApplyLocalFirewallRules,0
+Windows Firewall: Public: Settings: Apply local connection security rules,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile,ApplyLocalConnectionSecurityRules,0
+Windows Firewall: Public: Logging: Name,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile,LogFileName,%SystemRoot%\System32\logfiles\firewall\publicfw.log
+Windows Firewall: Public: Logging: Size limit (KB),HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile,LogMaxSizeKB,16384
+Windows Firewall: Public: Logging: Log dropped packets,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile,LogDroppedPackets,1
+Windows Firewall: Public: Logging: Log successful connections,HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile,LogSuccessfulConnections,1
+Audit Credential Validation,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditCredentialValidation,3
+Audit Application Group Management,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditApplicationGroupManagement,3
+Audit Security Group Management,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditSecurityGroupManagement,1
+Audit User Account Management,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditUserAccountManagement,3
+Audit PNP Activity,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditPNPActivity,1
+Audit Process Creation,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditProcessCreation,1
+Audit Account Lockout,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditAccountLockout,2
+Audit Group Membership,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditGroupMembership,1
+Audit Logoff,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditLogoff,1
+Audit Logon,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditLogon,3
+Audit Other Logon/Logoff Events,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditOtherLogonLogoffEvents,3
+Audit Special Logon,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditSpecialLogon,1
+Audit Detailed File Share,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditDetailedFileShare,2
+Audit File Share,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditFileShare,3
+Audit Other Object Access Events,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditOtherObjectAccessEvents,3
+Audit Removable Storage,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditRemovableStorage,3
+Audit Audit Policy Change,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditAuditPolicyChange,1
+Audit Authentication Policy Change,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditAuthenticationPolicyChange,1
+Audit Authorization Policy Change,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditAuthorizationPolicyChange,1
+Audit MPSSVC Rule-Level Policy Change,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditMPSSVCRuleLevelPolicyChange,3
+Audit Other Policy Change Events,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditOtherPolicyChangeEvents,2
+Audit Sensitive Privilege Use,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditSensitivePrivilegeUse,3
+Audit IPsec Driver,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditIPsecDriver,3
+Audit Other System Events,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditOtherSystemEvents,3
+Audit Security State Change,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditSecurityStateChange,1
+Audit Security System Extension,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditSecuritySystemExtension,1
+Audit System Integrity,HKLM:\SYSTEM\CurrentControlSet\Services\Audit\Parameters,AuditSystemIntegrity,3
+Prevent enabling lock screen camera,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization,PreventLockScreenCamera,1
+Prevent enabling lock screen slide show,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization,PreventLockScreenSlideshow,1
+Allow users to enable online speech recognition services,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Speech,AllowOnlineSpeechRecognition,0
+Allow Online Tips,HKLM:\SOFTWARE\Policies\Microsoft\Windows\System,AllowOnlineTips,0
+Configure RPC packet level privacy setting for incoming connections,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RPC,ConfigureRPCPrivacy,1
+Configure SMB v1 client driver,HKLM:\SOFTWARE\Policies\Microsoft\Windows\SMB1\Client,EnableSMB1,0
+Configure SMB v1 server,HKLM:\SOFTWARE\Policies\Microsoft\Windows\SMB1\Server,EnableSMB1,0
+Enable Certificate Padding,HKLM:\SOFTWARE\Policies\Microsoft\Cryptography,EnableCertificatePadding,1
+Enable Structured Exception Handling Overwrite Protection (SEHOP),HKLM:\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers,EnableSEHOP,1
+NetBT NodeType configuration,HKLM:\SYSTEM\CurrentControlSet\Services\NetBT\Parameters,NodeType,2
+WDigest Authentication,HKLM:\SYSTEM\CurrentControlSet\Control\Lsa,UseLogonCredential,0
+MSS: (AutoAdminLogon) Enable Automatic Logon,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon,AutoAdminLogon,0
+MSS: (DisableIPSourceRouting IPv6) IP source routing protection level,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters,DisableIPSourceRouting,1
+MSS: (DisableIPSourceRouting) IP source routing protection level,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters,DisableIPSourceRouting,1
+MSS: (DisableSavePassword) Prevent the dial-up password from being saved,HKLM:\SYSTEM\CurrentControlSet\Services\RasMan\Parameters,DisableSavePassword,1
+MSS: (EnableICMPRedirect) Allow ICMP redirects to override OSPF generated routes,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters,EnableICMPRedirect,0
+MSS: (KeepAliveTime) How often keepalive packets are sent in milliseconds,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters,KeepAliveTime,300000
+MSS: (NoNameReleaseOnDemand) Allow the computer to ignore NetBIOS name release requests except from WINS servers,HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters,NoNameReleaseOnDemand,1
+Enable Structured Exception Handling Overwrite Protection (SEHOP),HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\ProtectionMode,ProtectionMode,1
+NetBT NodeType configuration,HKLM:\SYSTEM\CurrentControlSet\Services\NetBT\Parameters\NodeType,NodeType,0x1
+WDigest Authentication,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation,AllowPlainTextPasswords,0
+MSS: (AutoAdminLogon) Enable Automatic Logon,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon,AutoAdminLogon,0
+MSS: (DisableIPSourceRouting IPv6) IP source routing protection level,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters,DisableIPSourceRouting,2
+MSS: (DisableIPSourceRouting) IP source routing protection level,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters,DisableIPSourceRouting,2
+MSS: (DisableSavePassword) Prevent the dial-up password from being saved,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Network Connections,SavePassword,1
+MSS: (EnableICMPRedirect) Allow ICMP redirects to override OSPF generated routes,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters,EnableICMPRedirect,0
+MSS: (KeepAliveTime) How often keepalive packets are sent in milliseconds,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters,KeepAliveTime,300000
+MSS: (NoNameReleaseOnDemand) Allow the computer to ignore NetBIOS name release requests except from WINS servers,HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters,NoNameReleaseOnDemand,1
+MSS: (PerformRouterDiscovery) Allow IRDP to detect and configure Default Gateway addresses,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters,PerformRouterDiscovery,0
+Name,RegistryPath,ValueName,ExpectedValue
+MSS: (SafeDllSearchMode) Enable Safe DLL search mode,HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\SafeDllSearchMode,SafeDllSearchMode,1
+MSS: (ScreenSaverGracePeriod) The time in seconds before the screen saver grace period expires,HKCU:\Control Panel\Desktop,ScreenSaveTimeOut,5
+MSS: (TcpMaxDataRetransmissions IPv6) How many times unacknowledged data is retransmitted,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters,TcpMaxDataRetransmissions,3
+MSS: (TcpMaxDataRetransmissions) How many times unacknowledged data is retransmitted,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters,TcpMaxDataRetransmissions,3
+MSS: (WarningLevel) Percentage threshold for the security event log at which the system will generate a warning,HKLM:\SYSTEM\CurrentControlSet\Control\WMI\Autorecover,WarningLevel,90
+Configure DNS over HTTPS (DoH) name resolution,HKLM:\SOFTWARE\Policies\Microsoft\Edge\DNSOverHttps,DNSOverHttpsMode,2
+Enable Font Providers,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Fonts,DisableFontProviders,1
+Enable insecure guest logons,HKLM:\SOFTWARE\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths,EnableInsecureGuestLogons,0
+Turn on Mapper I/O (LLTDIO) driver,HKLM:\SYSTEM\CurrentControlSet\Services\LLTDIO,Start,4
+Turn on Responder (RSPNDR) driver,HKLM:\SYSTEM\CurrentControlSet\Services\RSPNDR,Start,4
+Turn off Microsoft Peer-to-Peer Networking Services,HKLM:\SYSTEM\CurrentControlSet\Services\p2psvc,Start,4
+Prohibit installation and configuration of Network Bridge on your DNS domain network,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Network Connections,ProhibitNetworkBridge,1
+Prohibit use of Internet Connection Sharing on your DNS domain network,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Network Connections,ProhibitInternetConnectionSharing,1
+Hardened UNC Paths,HKLM:\SOFTWARE\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths,RequireMutualAuthentication,1
+Disable IPv6,HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters,DisabledComponents,0xff
+Name,RegistryPath,ValueName,ExpectedValue
+Configuration of wireless settings using Windows Connect Now,HKLM:\SOFTWARE\Policies\Microsoft\Windows\WCN,EnableWCN,0
+Prohibit access of the Windows Connect Now wizards,HKLM:\SOFTWARE\Policies\Microsoft\Windows\WCN,ProhibitWizards,1
+Minimize the number of simultaneous connections to the Internet or a Windows Domain,HKLM:\SOFTWARE\Policies\Microsoft\Windows\WCM,MaxSimultaneousConnections,3
+Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services,HKLM:\SOFTWARE\Policies\Microsoft\Windows\WCM,AutoConnect,0
+Allow Print Spooler to accept client connections,HKLM:\SYSTEM\CurrentControlSet\Control\Print\Server,AllowClientConnections,0
+Configure Redirection Guard,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RedirectionGuard,RedirectionGuardEnabled,1
+Configure RPC connection settings: Protocol to use for outgoing RPC connections,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RPC,Protocol,1
+Configure RPC connection settings: Use authentication for outgoing RPC connections,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RPC,Authentication,0
+Configure RPC listener settings: Protocols to allow for incoming RPC connections,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RPC,ListenerProtocol,1
+Configure RPC listener settings: Authentication protocol to use for incoming RPC connections,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RPC,ListenerAuthentication,2
+Configure RPC over TCP port,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RPC,RPCTCPPort,0
+Limits print driver installation to Administrators,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Print,PrintDriverInstallation,1
+Manage processing of Queue-specific files,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Print,QueueSpecificFiles,1
+Point and Print Restrictions: When installing drivers for a new connection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\PointAndPrint,InstallDrivers,1
+Point and Print Restrictions: When updating drivers for an existing connection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\PointAndPrint,UpdateDrivers,1
+Turn off notifications network usage,HKLM:\SOFTWARE\Policies\Microsoft\Windows\NetworkUsage,TurnOffNotifications,1
+Name,RegistryPath,ValueName,ExpectedValue
+Remove Personalized Website Recommendations from the Recommended section in the Start Menu,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,RemovePersonalizedRecommendations,1
+Include command line in process creation events,HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,IncludeCommandLine,1
+Encryption Oracle Remediation,HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\Local\Components,OracleRemediation,1
+Remote host allows delegation of non exportable credentials,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation,AllowDelegationNonExportable,1
+Turn On Virtualization Based Security,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard,EnableVirtualizationBasedSecurity,1
+Turn On Virtualization Based Security: Select Platform Security Level,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard,PlatformSecurityLevel,2
+Turn On Virtualization Based Security: Virtualization Based Protection of Code Integrity,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard,CodeIntegrityGuard,1
+Turn On Virtualization Based Security: Require UEFI Memory Attributes Table,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard,UEFIMemoryAttributesTable,1
+Turn On Virtualization Based Security: Credential Guard Configuration,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard,CredentialGuard,1
+Turn On Virtualization Based Security: Secure Launch Configuration,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard,SecureLaunch,1
+Turn On Virtualization Based Security: Kernel-mode Hardware-enforced Stack Protection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard,StackProtection,1
+Prevent installation of devices that match any of these device IDs,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Restrictions,PreventInstallation,1
+Prevent installation of devices that match any of these device IDs: Prevent installation of devices that match any of these device IDs,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Restrictions,DeviceIDs,PCI\CC_0C0A
+Prevent installation of devices that match any of these device IDs: Also apply to matching devices that are already installed,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Restrictions,ApplyToInstalledDevices,1
+Prevent installation of devices using drivers that match these device setup classes,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Restrictions,SetupClasses,1
+Name,RegistryPath,ValueName,ExpectedValue
+Prevent installation of devices using drivers that match these device setup classes: Prevent installation of devices using drivers for these device setup,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Restrictions,DeviceSetupClasses,IEEE 1394
+Prevent installation of devices using drivers that match these device setup classes: Also apply to matching devices that are already installed,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Restrictions,ApplyToInstalledDevices,1
+Prevent device metadata retrieval from the Internet,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Restrictions,PreventDeviceMetadataRetrieval,1
+Boot-Start Driver Initialization Policy,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Restrictions,BootStartDriverInitialization,1
+Continue experiences on this device,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,ContinueExperiences,0
+Turn off access to the Store,HKLM:\SOFTWARE\Policies\Microsoft\WindowsStore,DisableStore,1
+Turn off downloading of print drivers over HTTP,HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Printers,DisablePrintDriverDownloads,1
+Turn off handwriting personalization data sharing,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Handwriting,DisableHandwritingPersonalizationDataSharing,1
+Turn off handwriting recognition error reporting,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Handwriting,DisableHandwritingRecognitionErrorReporting,1
+Turn off Internet Connection Wizard if URL connection is referring to Microsoft.com,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Internet Connection Wizard,DisableMICW,1
+Turn off Internet download for Web publishing and online ordering wizards,HKLM:\SOFTWARE\Policies\Microsoft\Windows\WebPublishing,DisableWebPublishing,1
+Turn off printing over HTTP,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Printing,DisablePrintingOverHTTP,1
+Turn off Registration if URL connection is referring to Microsoft.com,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Registration,DisableMICW,1
+Turn off Search Companion content file updates,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Search,DisableSearchCompanionUpdates,1
+Turn off the "Order Prints" picture task,HKLM:\SOFTWARE\Policies\Microsoft\Windows\PhotoViewer,DisableOrderPrints,1
+Turn off the "Publish to Web" task for files and folders,HKLM:\SOFTWARE\Policies\Microsoft\Windows\PhotoViewer,DisablePublishToWeb,1
+Turn off the Windows Messenger Customer Experience Improvement Program,HKLM:\SOFTWARE\Policies\Microsoft\Messenger,DisableCEIP,1
+Name,RegistryPath,ValueName,ExpectedValue
+Turn off Windows Customer Experience Improvement Program,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CustomerExperience,TurnOffCEIP,1
+Turn off Windows Error Reporting,HKLM:\SOFTWARE\Policies\Microsoft\Windows\ErrorReporting,TurnOffErrorReporting,1
+Support device authentication using certificate,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceAuthentication,SupportCertificateAuthentication,1
+Enumeration policy for external devices incompatible with Kernel DMA Protection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\KernelDMAPolicy,EnumerationPolicy,1
+Allow Custom SSPs and APs to be loaded into LSASS,HKLM:\SOFTWARE\Policies\Microsoft\Windows\LSASS,AllowCustomSSPs,0
+Configures LSASS to run as a protected process,HKLM:\SOFTWARE\Policies\Microsoft\Windows\LSASS,ProtectedProcess,1
+Disallow copying of user input methods to the system account for sign-in,HKLM:\SOFTWARE\Policies\Microsoft\Windows\SignIn,DisallowInputMethodsCopy,1
+Block user from showing account details on sign-in,HKLM:\SOFTWARE\Policies\Microsoft\Windows\SignIn,BlockAccountDetails,1
+Do not display network selection UI,HKLM:\SOFTWARE\Policies\Microsoft\Windows\NetworkUI,DisableNetworkSelectionUI,1
+Turn off app notifications on the lock screen,HKLM:\SOFTWARE\Policies\Microsoft\Windows\LockScreen,TurnOffAppNotifications,1
+Turn on convenience PIN sign-in,HKLM:\SOFTWARE\Policies\Microsoft\Windows\SignIn,EnableConveniencePIN,0
+Allow Clipboard synchronization across devices,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Clipboard,AllowClipboardSync,0
+Allow upload of User Activities,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Activities,AllowUserActivitiesUpload,0
+Allow network connectivity during connected-standby (on battery),HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerSettings,AllowNetworkConnectivityBattery,0
+Allow network connectivity during connected-standby (plugged in),HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerSettings,AllowNetworkConnectivityPluggedIn,0
+Allow standby states (S1-S3) when sleeping (on battery),HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerSettings,AllowStandbyStatesBattery,0
+Allow standby states (S1-S3) when sleeping (plugged in),HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerSettings,AllowStandbyStatesPluggedIn,0
+Name,RegistryPath,ValueName,ExpectedValue
+Require a password when a computer wakes (on battery),HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerSettings,RequirePasswordOnWakeBattery,1
+Require a password when a computer wakes (plugged in),HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerSettings,RequirePasswordOnWakePluggedIn,1
+Configure Offer Remote Assistance,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteAssistance,OfferRemoteAssistance,0
+Configure Solicited Remote Assistance,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteAssistance,AllowSolicitedRemoteAssistance,0
+Enable RPC Endpoint Mapper Client Authentication,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RPC,EnableEndpointMapperClientAuth,1
+Restrict Unauthenticated RPC clients,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RPC,RestrictUnauthenticatedRPC,1
+Microsoft Support Diagnostic Tool: Turn on MSDT interactive communication with support provider,HKLM:\SOFTWARE\Policies\Microsoft\Windows\MSDT,EnableInteractiveCommunication,0
+Enable/Disable PerfTrack,HKLM:\SOFTWARE\Policies\Microsoft\Windows\PerfTrack,EnablePerfTrack,0
+Turn off the advertising ID,HKLM:\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo,DisableAdvertisingID,1
+Enable Windows NTP Client,HKLM:\SOFTWARE\Policies\Microsoft\Windows\TimeService,EnableNTPClient,1
+Allow a Windows app to share application data between users,HKLM:\SOFTWARE\Policies\Microsoft\Windows\SharedAppData,AllowAppDataSharing,0
+Prevent non-admin users from installing packaged Windows apps,HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPackage,PreventNonAdminAppInstall,1
+Let Windows apps activate with voice while the system is locked,HKLM:\SOFTWARE\Policies\Microsoft\Windows\VoiceActivation,VoiceActivationLockedSystem,0
+Allow Microsoft accounts to be optional,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Accounts,AllowOptionalMicrosoftAccounts,1
+Block launching Universal Windows apps with Windows Runtime API access from hosted content,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Runtime,BlockUWPApps,1
+Disallow Autoplay for non-volume devices,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Autoplay,DisallowAutoplayNonVolume,1
+Set the default behavior for AutoRun,HKLM:\SOFTWARE\Policies\Microsoft\Windows\AutoRun,DefaultAutoRunBehavior,0
+Name,RegistryPath,ValueName,ExpectedValue
+Turn off Autoplay,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Explorer,NoDriveTypeAutoRun,0x000000FF
+Configure enhanced anti-spoofing,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Biometrics,EnableAntiSpoofing,1
+Allow access to BitLocker-protected fixed data drives from earlier versions of Windows,HKLM:\SOFTWARE\Policies\Microsoft\FVE,AllowLegacyRecovery,0
+Choose how BitLocker-protected fixed drives can be recovered,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RecoveryOptions,1
+Choose how BitLocker-protected fixed drives can be recovered: Allow data recovery agent,HKLM:\SOFTWARE\Policies\Microsoft\FVE,AllowDataRecoveryAgent,1
+Choose how BitLocker-protected fixed drives can be recovered: Recovery Password,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RecoveryPassword,1
+Choose how BitLocker-protected fixed drives can be recovered: Recovery Key,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RecoveryKey,1
+Choose how BitLocker-protected fixed drives can be recovered: Omit recovery options from the BitLocker setup wizard,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OmitRecoveryOptions,1
+Choose how BitLocker-protected fixed drives can be recovered: Save BitLocker recovery information to AD DS for fixed data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,SaveToADDS,0
+Choose how BitLocker-protected fixed drives can be recovered: Configure storage of BitLocker recovery information to AD DS,HKLM:\SOFTWARE\Policies\Microsoft\FVE,BackupToADDS,1
+Choose how BitLocker-protected fixed drives can be recovered: Do not enable BitLocker until recovery information is stored to AD DS for fixed data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,NoEnableUntilStoredToADDS,0
+Configure use of hardware-based encryption for fixed data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,HardwareEncryption,0
+Configure use of passwords for fixed data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,PasswordEncryption,0
+Configure use of smart cards on fixed data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,SmartCardEncryption,1
+Configure use of smart cards on fixed data drives: Require use of smart cards on fixed data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RequireSmartCard,1
+Allow enhanced PINs for startup,HKLM:\SOFTWARE\Policies\Microsoft\FVE,EnhancedPIN,1
+Name,RegistryPath,ValueName,ExpectedValue
+Allow Secure Boot for integrity validation,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Setup,SecureBoot,1
+Choose how BitLocker-protected operating system drives can be recovered,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OSDriveRecoveryOptions,1
+Choose how BitLocker-protected operating system drives can be recovered: Allow data recovery agent,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OSAllowDataRecoveryAgent,0
+Choose how BitLocker-protected operating system drives can be recovered: Recovery Password,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OSRecoveryPassword,1
+Choose how BitLocker-protected operating system drives can be recovered: Recovery Key,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OSRecoveryKey,0
+Choose how BitLocker-protected operating system drives can be recovered: Omit recovery options from the BitLocker setup wizard,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OSOmitRecoveryOptions,1
+Choose how BitLocker-protected operating system drives can be recovered: Save BitLocker recovery information to AD DS for operating system drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OSSavedToADDS,1
+Choose how BitLocker-protected operating system drives can be recovered: Configure storage of BitLocker recovery information to AD DS:,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OSBackupToADDS,1
+Choose how BitLocker-protected operating system drives can be recovered: Do not enable BitLocker until recovery information is stored to AD DS for operating system drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OSNoEnableUntilStoredToADDS,1
+Configure use of hardware-based encryption for operating system drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OSHardwareEncryption,0
+Configure use of passwords for operating system drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,OSPasswordEncryption,0
+Require additional authentication at startup,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RequireStartupAuth,1
+Require additional authentication at startup: Allow BitLocker without a compatible TPM,HKLM:\SOFTWARE\Policies\Microsoft\FVE,AllowBitLockerWithoutTPM,0
+Require additional authentication at startup: Configure TPM startup:,HKLM:\SOFTWARE\Policies\Microsoft\FVE,TPMStartupConfig,0
+Name,RegistryPath,ValueName,ExpectedValue
+Require additional authentication at startup: Configure TPM startup PIN:,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RequireTPMStartupPIN,1
+Require additional authentication at startup: Configure TPM startup key:,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RequireTPMStartupKey,0
+Require additional authentication at startup: Configure TPM startup key and PIN:,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RequireTPMStartupKeyAndPIN,0
+Allow access to BitLocker-protected removable data drives from earlier versions of Windows,HKLM:\SOFTWARE\Policies\Microsoft\FVE,AllowAccessFromEarlierWindows,0
+Choose how BitLocker-protected removable drives can be recovered,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RemovableDriveRecoveryOptions,1
+Choose how BitLocker-protected removable drives can be recovered: Allow data recovery agent,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RemovableAllowDataRecoveryAgent,1
+Choose how BitLocker-protected removable drives can be recovered: Recovery Password,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RemovableRecoveryPassword,0
+Choose how BitLocker-protected removable drives can be recovered: Recovery Key,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RemovableRecoveryKey,0
+Choose how BitLocker-protected removable drives can be recovered: Omit recovery options from the BitLocker setup wizard,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RemovableOmitRecoveryOptions,1
+Choose how BitLocker-protected removable drives can be recovered: Save BitLocker recovery information to AD DS for removable data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RemovableSavedToADDS,0
+Choose how BitLocker-protected removable drives can be recovered: Configure storage of BitLocker recovery information to AD DS:,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RemovableBackupToADDS,1
+Choose how BitLocker-protected removable drives can be recovered: Do not enable BitLocker until recovery information is stored to AD DS for removable data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RemovableNoEnableUntilStoredToADDS,0
+Configure use of hardware-based encryption for removable data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RemovableHardwareEncryption,0
+Configure use of passwords for removable data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,RemovablePasswordEncryption,0
+Name,RegistryPath,ValueName,ExpectedValue
+Configure use of smart cards on removable data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,SmartCardOnRemovableDrives,1
+Configure use of smart cards on removable data drives: Require use of smart cards on removable data drives,HKLM:\SOFTWARE\Policies\Microsoft\FVE,SmartCardRequireOnRemovableDrives,1
+Deny write access to removable drives not protected by BitLocker,HKLM:\SOFTWARE\Policies\Microsoft\FVE,DenyWriteAccessToNonBitLockerRemovableDrives,1
+Deny write access to removable drives not protected by BitLocker: Do not allow write access to devices configured in another organization,HKLM:\SOFTWARE\Policies\Microsoft\FVE,DenyWriteAccessToNonBitLockerRemovableDrivesDifferentOrg,0
+Disable new DMA devices when this computer is locked,HKLM:\SOFTWARE\Policies\Microsoft\FVE,DisableNewDMADevicesWhenLocked,1
+Allow Use of Camera,HKLM:\SOFTWARE\Policies\Microsoft\Camera,AllowCamera,0
+Turn off cloud consumer account state content,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,TurnOffCloudConsumerAccountStateContent,1
+Turn off cloud optimized content,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,TurnOffCloudOptimizedContent,1
+Turn off Microsoft consumer experiences,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,TurnOffMicrosoftConsumerExperiences,1
+Require pin for pairing,HKLM:\SOFTWARE\Policies\Microsoft\Bluetooth,RequirePINForPairing,1
+Do not display the password reveal button,HKLM:\SOFTWARE\Policies\Microsoft\Windows\System,PasswordRevealButton,1
+Enumerate administrator accounts on elevation,HKLM:\SOFTWARE\Policies\Microsoft\Windows\System,EnumerateAdminOnElevation,0
+Prevent the use of security questions for local accounts,HKLM:\SOFTWARE\Policies\Microsoft\Windows\System,PreventSecurityQuestions,1
+Allow Diagnostic Data,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection,DiagnosticData,1
+Allow Use of Camera,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Camera,AllowCamera,0
+Turn off cloud consumer account state content,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,DisableCloudConsumerAccountState,1
+Turn off cloud optimized content,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,DisableCloudOptimizedContent,1
+Turn off Microsoft consumer experiences,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,DisableWindowsConsumerFeatures,1
+Require pin for pairing,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Connect,RequirePinForPairing,1
+Do not display the password reveal button,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CredUI,DisablePasswordReveal,1
+Enumerate administrator accounts on elevation,HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\CredUI,EnumerateAdministrators,0
+Prevent the use of security questions for local accounts,HKLM:\SOFTWARE\Policies\Microsoft\Windows\System,NoLocalSecurityQuestions,1
+Allow Diagnostic Data,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection,AllowTelemetry,0 or 1
+Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection,DisableAuthenticatedProxyUsage,1
+Disable OneSettings Downloads,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection,DisableOneSettingsDownloads,1
+Do not show feedback notifications,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection,DoNotShowFeedbackNotifications,1
+Enable OneSettings Auditing,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection,EnableOneSettingsAuditing,1
+Limit Diagnostic Log Collection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection,LimitDiagnosticLogCollection,1
+Limit Dump Collection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection,LimitDumpCollection,1
+Toggle user control over Insider builds,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection,ToggleUserControlOverInsiderBuilds,0
+Download Mode,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization,DownloadMode,0 (not Internet)
+Enable App Installer,HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppInstaller,EnableAppInstaller,0
+Enable App Installer Experimental Features,HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppInstaller,EnableAppInstallerExperimentalFeatures,0
+Enable App Installer Hash Override,HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppInstaller,EnableAppInstallerHashOverride,0
+Enable App Installer ms-appinstaller protocol,HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppInstaller,EnableAppInstallerMsAppinstallerProtocol,0
+Control Event Log behavior when the log file reaches its maximum size,HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application,ControlEventLogMaxSize,0
+Specify the maximum log file size (KB),HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application,MaxSize,32768 or greater
+Control Event Log behavior when the log file reaches its maximum size,HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Security,ControlEventLogMaxSize,0
+Specify the maximum log file size (KB),HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Security,MaxSize,196608 or greater
+Control Event Log behavior when the log file reaches its maximum size,HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Setup,ControlEventLogMaxSize,0
+Specify the maximum log file size (KB),HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Setup,MaxSize,32768 or greater
+Control Event Log behavior when the log file reaches its maximum size,HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\System,ControlEventLogMaxSize,0
+Specify the maximum log file size (KB),HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\System,MaxSize,32768 or greater
+Turn off account-based insights, recent, favorite, and recommended files in File Explorer,HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced,LaunchFolderWindowsDefault,1
+Turn off Data Execution Prevention for Explorer,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\explorer.exe,DisableNXShowUI,0
+Turn off heap termination on corruption,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\explorer.exe,HeapDeCommitFreeBlockThreshold,0
+Turn off shell protocol protected mode,HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\explorer.exe,DisableProtectedMode,0
+Turn off location,HKLM:\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors,TurnOffLocation,1
+Allow Message Service Cloud Sync,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,AllowMessageServiceCloudSync,0
+Block all consumer Microsoft account user authentication,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,BlockConsumerAccountAuth,1
+Configure local setting override for reporting to Microsoft MAPS,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,LocalSettingOverride,0
+Join Microsoft MAPS,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent,JoinMAPS,0
+Configure Attack Surface Reduction rules,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\AttackSurfaceReduction,ConfigureASRRules,1
+Configure Attack Surface Reduction rules: Set the state for each ASR rule,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\AttackSurfaceReduction,ASRRuleStates,Configured
+Prevent users and apps from accessing dangerous websites,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Web Protection,BlockDangerousSites,1
+Enable file hash computation feature,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\FileHashComputation,EnableFileHashComputation,1
+Scan all downloaded files and attachments,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Scan,ScanAllFiles,1
+Turn off real-time protection,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\RealTimeProtection,TurnOffRealTimeProtection,0
+Turn on behavior monitoring,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\BehaviorMonitoring,EnableBehaviorMonitoring,1
+Turn on script scanning,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender,EnableScriptScanning,1
+Configure Watson events,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender,ConfigureWatsonEvents,0
+Scan packed executables,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender,ScanPackedExecutables,1
+Scan removable drives,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender,ScanRemovableDrives,1
+Turn on e-mail scanning,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender,EnableEmailScanning,1
+Configure detection for potentially unwanted applications,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender,DetectionPUA,1
+Turn off Microsoft Defender AntiVirus,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender,DisableAntiVirus,0
+Allow auditing events in Microsoft Defender Application Guard,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\ApplicationGuard,EnableAuditing,1
+Allow camera and microphone access in Microsoft Defender Application Guard,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\ApplicationGuard,AllowCameraMicrophoneAccess,0
+Allow data persistence for Microsoft Defender Application Guard,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\ApplicationGuard,AllowDataPersistence,0
+Allow files to download and save to the host operating system from Microsoft Defender Application Guard,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\ApplicationGuard,AllowFileDownload,0
+Configure Microsoft Defender Application Guard clipboard settings: Clipboard behavior setting,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\ApplicationGuard,ClipboardBehavior,1
+Turn on Microsoft Defender Application Guard in Managed Mode,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\ApplicationGuard,EnableManagedMode,1
+Enable news and interests on the taskbar,HKLM:\SOFTWARE\Policies\Microsoft\Windows\NewsAndInterests,EnableNewsAndInterests,0
+Prevent the usage of OneDrive for file storage,HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive,DisableFileStorage,1
+Turn off Push To Install service,HKLM:\SOFTWARE\Policies\Microsoft\Windows\PushToInstall,PushToInstallService,1
+Disable Cloud Clipboard integration for server-to-client data transfer,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudClipboard,DisableCloudClipboardIntegration,1
+Do not allow passwords to be saved,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Credentials,DoNotSavePasswords,1
+Allow users to connect remotely by using Remote Desktop Services,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,AllowRemoteDesktop,0
+Allow UI Automation redirection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,AllowUIAutomationRedirection,0
+Do not allow COM port redirection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,DoNotAllowCOMPortRedirection,1
+Do not allow drive redirection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,DoNotAllowDriveRedirection,1
+Do not allow location redirection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,DoNotAllowLocationRedirection,1
+Do not allow LPT port redirection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,DoNotAllowLPTPortRedirection,1
+Do not allow supported Plug and Play device redirection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,DoNotAllowPnPDeviceRedirection,1
+Do not allow WebAuthn redirection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,DoNotAllowWebAuthnRedirection,1
+Always prompt for password upon connection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,AlwaysPromptForPassword,1
+Require secure RPC communication,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,RequireSecureRPC,1
+Require use of specific security layer for remote (RDP) connections,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,RequireSecurityLayer,SSL
+Require user authentication for remote connections by using Network Level Authentication,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,RequireNetworkLevelAuthentication,1
+Set client connection encryption level,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,ClientConnectionEncryptionLevel,High
+Set time limit for active but idle Remote Desktop Services sessions,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,TimeLimitActiveButIdle,15
+Set time limit for disconnected sessions,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteDesktopServices,TimeLimitDisconnected,1
+Do not delete temp folders upon exit,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Explorer,DoNotDeleteTempFolders,0
+Prevent downloading of enclosures,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Internet Explorer,PreventDownloadEnclosures,1
+Allow Cloud Search,HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudSearch,AllowCloudSearch,0
+Allow Cortana,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Cortana,AllowCortana,0
+Allow Cortana above lock screen,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Cortana,AllowCortanaAboveLockScreen,0
+Allow indexing of encrypted files,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Search,AllowIndexingOfEncryptedFiles,0
+Allow search and Cortana to use location,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Search,AllowSearchUseLocation,0
+Allow search highlights,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Search,AllowSearchHighlights,0
+Turn off KMS Client Online AVS Validation,HKLM:\SOFTWARE\Policies\Microsoft\Windows\KMS,TurnOffKMSClientOnlineAVSValidation,1
+Disable all apps from Microsoft Store,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Store,DisableAllAppsFromStore,0
+Only display the private store within the Microsoft Store,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Store,DisplayPrivateStoreOnly,1
+Turn off Automatic Download and Install of updates,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Update,TurnOffAutoDownloadAndInstallUpdates,0
+Turn off the offer to update to the latest version of Windows,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Update,TurnOffUpdateOffer,1
+Turn off the Store application,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Store,TurnOffStoreApp,1
+Allow widgets,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Widgets,AllowWidgets,0
+Automatic Data Collection,HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection,AutomaticDataCollection,1
+Notify Malicious,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Security,NotifyMalicious,1
+Notify Password Reuse,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Security,NotifyPasswordReuse,1
+Notify Unsafe App,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Security,NotifyUnsafeApp,1
+Service Enabled,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Service,ServiceEnabled,1
+Configure Windows Defender SmartScreen,HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen,SmartScreenConfig,WarnAndPreventBypass
+Enables or disables Windows Game Recording and Broadcasting,HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR,EnableGameDVR,0
+Enable ESS with Supported Peripherals,HKLM:\SOFTWARE\Policies\Microsoft\Windows\ESS,EnableESS,1
+Allow suggested apps in Windows Ink Workspace,HKLM:\SOFTWARE\Policies\Microsoft\Windows\InkWorkspace,AllowSuggestedApps,0
+Allow Windows Ink Workspace,HKLM:\SOFTWARE\Policies\Microsoft\Windows\InkWorkspace,AllowInkWorkspace,On_DisallowAccessAboveLockOrDisabled
+Allow user control over installs,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Installer,AllowUserControlOverInstalls,0
+Always install with elevated privileges,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Installer,AlwaysInstallWithElevatedPrivileges,0
+Prevent Internet Explorer security prompt for Windows Installer scripts,HKLM:\SOFTWARE\Policies\Microsoft\Internet Explorer\Main,PreventSecurityPrompt,0
+Enable MPR notifications for the system,HKLM:\SOFTWARE\Policies\Microsoft\Windows\MPR,EnableMPRNotifications,0
+Sign-in and lock last interactive user automatically after a restart,HKLM:\SOFTWARE\Policies\Microsoft\Windows\System,SignInLockLastUser,0
+Turn on PowerShell Script Block Logging,HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell,ScriptBlockLogging,1
+Turn on PowerShell Transcription,HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell,Transcription,1
+Allow Basic authentication,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Authentication,BasicAuthentication,0
+Allow unencrypted traffic,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Network,AllowUnencryptedTraffic,0
+Disallow Digest authentication,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Authentication,DisallowDigestAuthentication,1
+Allow remote server management through WinRM,HKLM:\SOFTWARE\Policies\Microsoft\Windows\WinRM,AllowRemoteServerManagement,0
+Disallow WinRM from storing RunAs credentials,HKLM:\SOFTWARE\Policies\Microsoft\Windows\WinRM,DisallowRunAsCredentials,1
+Allow Remote Shell Access,HKLM:\SOFTWARE\Policies\Microsoft\Windows\RemoteShell,AllowRemoteShellAccess,0
+Allow clipboard sharing with Windows Sandbox,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Sandbox,AllowClipboardSharing,0
+Allow networking in Windows Sandbox,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Sandbox,AllowNetworking,0
+Prevent users from modifying settings,HKLM:\SOFTWARE\Policies\Microsoft\Windows\System,PreventUserSettingsModification,1
+No auto-restart with logged on users for scheduled automatic updates installations,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Update,NoAutoRestartWithLoggedOnUsers,0
+Configure Automatic Updates,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Update,ConfigureAutomaticUpdates,1
+Configure Automatic Updates: Scheduled install day,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Update,ScheduledInstallDay,0
+Enable features introduced via servicing that are off by default,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Servicing,EnableDefaultFeatures,0
+Remove access to “Pause updates” feature,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Update,RemovePauseUpdates,1
+Manage preview builds,HKLM:\SOFTWARE\Policies\Microsoft\Windows\PreviewBuilds,ManagePreviewBuilds,0
+Select when Preview Builds and Feature Updates are received,HKLM:\SOFTWARE\Policies\Microsoft\Windows\FeatureUpdates,PreviewBuildsSelection,180
+Select when Quality Updates are received,HKLM:\SOFTWARE\Policies\Microsoft\Windows\QualityUpdates,QualityUpdatesSelection,0
+Enable optional updates,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Update,EnableOptionalUpdates,0
+Turn off toast notifications on the lock screen,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Notifications,TurnOffToastNotificationsLockScreen,1
+Turn off Help Experience Improvement Program,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Help,TurnOffHelpExperienceImprovementProgram,1
+Do not preserve zone information in file attachments,HKLM:\SOFTWARE\Policies\Microsoft\Windows\ZoneInfo,DoNotPreserveZoneInfo,0
+Notify antivirus programs when opening attachments,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Security,NotifyAntivirusOnAttachments,1
+Configure Windows spotlight on lock screen,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Spotlight,ConfigureSpotlightLockScreen,0
+Do not suggest third-party content in Windows spotlight,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Spotlight,DoNotSuggestThirdPartyContent,1
+Do not use diagnostic data for tailored experiences,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Diagnostics,DoNotUseDiagnosticData,1
+Turn off all Windows spotlight features,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Spotlight,TurnOffSpotlightFeatures,1
+Turn off Spotlight collection on Desktop,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Spotlight,TurnOffSpotlightDesktopCollection,1
+Prevent users from sharing files within their profile,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Sharing,PreventFileSharingWithinProfile,1
+Turn off Windows Copilot,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Copilot,TurnOffCopilot,1
+Always install with elevated privileges,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Installer,AlwaysInstallWithElevatedPrivileges,0
+Prevent Codec Download,HKLM:\SOFTWARE\Policies\Microsoft\Windows\Media,PreventCodecDownload,1
