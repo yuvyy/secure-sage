@@ -3,6 +3,12 @@ import HomePage from "./pages/homePage";
 import NewTestPage from "./pages/newTestPage";
 import ReportsPage from "./pages/reportsPage";
 import ResultPage from "./pages/resultPage";
+
+import NewSystemPage from "./pages/newSystemPage";
+import NewGroupPage from "./pages/newGroupPage";
+import EditGroupPage from "./pages/editGroupPage";
+import CustomCategoryPage from "./pages/customCategoryPage";
+import EditCategoryPage from "./pages/editCategoryPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
@@ -28,6 +34,26 @@ function App() {
     {
       path: '/aboutUs',
       element: <AboutUsPage/>
+    },
+    {
+      path: '/newGroup',
+      element: <NewGroupPage/>
+    },
+    {
+      path: '/newSystem',
+      element: <NewSystemPage/>
+    },
+    {
+      path: '/editGroup',
+      element: <EditGroupPage/>
+    },
+    {
+      path: '/customCategory',
+      element: <CustomCategoryPage/>
+    },
+    {
+      path: '/editCategory',
+      element: <EditCategoryPage/>
     },
   ])
 
