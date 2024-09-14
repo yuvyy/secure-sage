@@ -72,7 +72,7 @@ export default function NewGroupForm() {
   };
 
   return (
-    <Card className="w-[550px]  shadow-zinc-800 dark:shadow-slate-50">
+    <Card className="w-[400px]  shadow-zinc-800 dark:shadow-slate-50">
       <CardHeader>
         <CardTitle>Create new Group</CardTitle>
       </CardHeader>

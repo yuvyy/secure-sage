@@ -1,14 +1,15 @@
 import Header from "../components/header";
 import Dashboard from "../components/dashboard";
+import Sidebar from "../components/sidebar";
+
 function HomePage() {
   return (
     <>
-      <header>
-        <Header />
-      </header>
-      <main className="flex flex-col gap-8 mx-20">
-        <Dashboard />
-        
+      <main className="flex">
+        <Sidebar />
+        <div className="flex-1 ml-16 p-4">
+          <Dashboard />
+        </div>
       </main>
     </>
   );

@@ -1,12 +1,11 @@
 import React from "react";
 import CategoricalBarChart from "@/Components/categoricalBarChart";
-import Header from "@/Components/Header";
 import TotalPieChart from "@/Components/totalPieChart";
 import { Button } from "@/Components/ui/button";
 import { useLocation } from "react-router-dom";
 import pdfMake from "pdfmake/build/pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts"; // Import fonts
-
+import Sidebar from "@/Components/sidebar";
 // Set the fonts
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
@@ -61,11 +60,9 @@ export default function ResultPage() {
 
   return (
     <>
-      <header>
-        <Header />
-      </header>
-      <main className="mx-20">
-        <div className="flex flex-col gap-4">
+      <main className="flex">
+        <Sidebar />
+        <div className="flex flex-col gap-4 ml-20 p-5">
           <div className="grid grid-cols-12 grid-rows-20 gap-3">
             <div
               className="center flex flex-col gap-4 border rounded-md shadow-md p-4 h-max col-span-4 row-span-2"
@@ -88,7 +85,9 @@ export default function ResultPage() {
             <div className="col-span-8 row-span-8 shadow-md" id="BarChart">
               <CategoricalBarChart />
             </div>
-            <div className="col-span-4 row-span-3 h-max shadow-md" id="Piechart">
+            <div
+              className="col-span-4 row-span-3 h-max shadow-md"
+              id="Piechart">
               <TotalPieChart pass={500} fail={500} />
             </div>
             <div className="flex gap-2 col-span-4">

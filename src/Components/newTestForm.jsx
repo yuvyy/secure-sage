@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/ui/tabs";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function NewTestPage() {
+export default function NewTestForm() {
   // Form and test data state
   const [testName, setTestName] = React.useState("");
   const [submittedData, setSubmittedData] = React.useState({});
@@ -76,10 +76,7 @@ export default function NewTestPage() {
 
   return (
     <>
-      <header>
-        <Header />
-      </header>
-      <main className="mx-20 border p-4 shadow-md rounded-lg w-[500px]">
+      <main className="border p-4 shadow-md rounded-lg w-[400px]">
         <div className="flex flex-col gap-5  ">
           <h1 className="text-primary text-3xl font-semibold">Perform Test</h1>
           <div>

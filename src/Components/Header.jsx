@@ -9,26 +9,36 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import ThemeToggle from "./themeToggle";
-export default function Header() {
+
+export default function Sidebar() {
   return (
-    <div className="p-2 shadow-lg flex justify-between items-center mb-4">
-      {/* <div className="border-primary rounded-lg p-2 pb-3">
-        <h2 className="font-semibold text-4xl text-primary">SecureSage</h2>
-      </div> */}
-      <nav>
-        <ul className="flex gap-10">
-          <Button variant="link" className="text-lg  " asChild>
-            <Link to="/" className="text-lg">
+    <div className="fixed top-0 left-0 h-full w-64 bg-white dark:bg-gray-800 shadow-lg flex flex-col">
+      {/* Sidebar Brand */}
+      <div className="p-4 border-b dark:border-gray-700">
+        <h2 className="font-semibold text-3xl text-primary">SecureSage</h2>
+      </div>
+
+      {/* Navigation Links */}
+      <nav className="flex-1 overflow-y-auto">
+        <ul className="flex flex-col gap-4 p-4">
+          <Button variant="link" className="text-lg w-full" asChild>
+            <Link
+              to="/"
+              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
               Home
             </Link>
           </Button>
-          <Button variant="link" className="text-lg" asChild>
-            <Link to="/reports" className="text-lg">
+          <Button variant="link" className="text-lg w-full" asChild>
+            <Link
+              to="/reports"
+              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
               Reports
             </Link>
           </Button>
-          <Button variant="link" className="text-lg" asChild>
-            <Link to="/aboutUs" className="text-lg">
+          <Button variant="link" className="text-lg w-full" asChild>
+            <Link
+              to="/aboutUs"
+              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
               About Us
             </Link>
           </Button>
@@ -37,11 +47,11 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-lg ">
+                <NavigationMenuTrigger className="text-lg w-full">
                   More
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className=" p-4 rounded-lg shadow-lg dark:shadow-lg">
-                  <div className="flex justify-around py-2">
+                <NavigationMenuContent className="p-4 rounded-lg shadow-lg dark:shadow-lg">
+                  <div className="flex flex-col gap-4 py-2">
                     <h4 className="font-bold dark:text-white">
                       Systems Configuration
                     </h4>
@@ -49,7 +59,7 @@ export default function Header() {
                       Tests Configuration
                     </h4>
                   </div>
-                  <div className="grid grid-cols-2 gap-6 w-96">
+                  <div className="grid grid-cols-1 gap-6 w-full">
                     <ul className="flex flex-col gap-2">
                       <li>
                         <NavigationMenuLink className="hover:text-gray-500 dark:hover:text-gray-300">
@@ -78,14 +88,14 @@ export default function Header() {
                         <NavigationMenuLink className="hover:text-gray-500 dark:hover:text-gray-300">
                           <Link
                             to="/customCategory"
-                            className="block px-4 py-1">
+                            className="block px-4 py-2">
                             Create Custom Category
                           </Link>
                         </NavigationMenuLink>
                       </li>
                       <li>
                         <NavigationMenuLink className="hover:text-gray-500 dark:hover:text-gray-300">
-                          <Link to="/editCategory" className="block px-4 py-1">
+                          <Link to="/editCategory" className="block px-4 py-2">
                             Edit Category
                           </Link>
                         </NavigationMenuLink>
@@ -98,8 +108,9 @@ export default function Header() {
           </NavigationMenu>
         </ul>
       </nav>
-      <div className="border-primary rounded-lg p-2 pb-3">
-        {/* <h2 className="font-semibold text-4xl text-card">SecureSage</h2> */}
+
+      {/* Theme Toggle */}
+      <div className="p-4 border-t dark:border-gray-700">
         <ThemeToggle />
       </div>
     </div>
