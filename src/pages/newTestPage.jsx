@@ -79,8 +79,8 @@ export default function NewTestPage() {
       <header>
         <Header />
       </header>
-      <main className="mx-20 border p-4 shadow-md rounded-lg">
-        <div className="flex flex-col gap-5">
+      <main className="mx-20 border p-4 shadow-md rounded-lg w-[500px]">
+        <div className="flex flex-col gap-5  ">
           <h1 className="text-primary text-3xl font-semibold">Perform Test</h1>
           <div>
             <label className="text-lg">Test Name</label>
@@ -125,7 +125,7 @@ export default function NewTestPage() {
             </p>
           </div>
           <div className="flex justify-center">
-            <Button className="text-xl" onClick={handleSubmit} type="button">
+            <Button className="text-lg" onClick={handleSubmit} type="button">
               Submit
             </Button>
           </div>

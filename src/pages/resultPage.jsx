@@ -47,11 +47,17 @@ const genPdf = () => {
   pdfMake.createPdf(docDefinition).download("example.pdf");
 };
 
-
-
 export default function ResultPage() {
   const location = useLocation();
   const data = location.state || {};
+
+  console.log("Received data:", data); // Check if data is logged correctly
+
+  const selectedSystemsOrGroups = data.selectedSystem?.length > 0
+    ? data.selectedSystem
+    : data.selectedGroups?.length > 0
+    ? data.selectedGroups.join(", ")
+    : "No systems or groups";
 
   return (
     <>
@@ -65,7 +71,7 @@ export default function ResultPage() {
               className="center flex flex-col gap-4 border rounded-md shadow-md p-4 h-max col-span-4 row-span-2"
               id="TextInfo">
               <h3 className="text-accent-foreground font-medium text-3xl">
-                {data.testName}
+                {data.testName || "Sample Test Name"}
               </h3>
               <ul className="pl-6 flex flex-col gap-1">
                 <li className="text-muted-foreground font-medium">
@@ -75,16 +81,14 @@ export default function ResultPage() {
                   Time: 10:25 pm
                 </li>
                 <li className="text-muted-foreground font-medium">
-                  Systems: {data.selectedSystem || data.selectedGroups}
+                  Systems: {selectedSystemsOrGroups}
                 </li>
               </ul>
             </div>
             <div className="col-span-8 row-span-8 shadow-md" id="BarChart">
               <CategoricalBarChart />
             </div>
-            <div
-              className="col-span-4 row-span-3 h-max shadow-md"
-              id="Piechart">
+            <div className="col-span-4 row-span-3 h-max shadow-md" id="Piechart">
               <TotalPieChart pass={500} fail={500} />
             </div>
             <div className="flex gap-2 col-span-4">

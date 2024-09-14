@@ -36,7 +36,7 @@ export default function NewSystemForm() {
   };
 
   return (
-    <Card className="w-[550px]">
+    <Card className="w-[550px] shadow-zinc-800 dark:shadow-slate-50">
       <CardHeader>
         <CardTitle>Add New System</CardTitle>
       </CardHeader>

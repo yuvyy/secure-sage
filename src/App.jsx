@@ -3,12 +3,13 @@ import HomePage from "./pages/homePage";
 import NewTestPage from "./pages/newTestPage";
 import ReportsPage from "./pages/reportsPage";
 import ResultPage from "./pages/resultPage";
-
+import ThemeToggle from "./Components/themeToggle";
 import NewSystemPage from "./pages/newSystemPage";
 import NewGroupPage from "./pages/newGroupPage";
 import EditGroupPage from "./pages/editGroupPage";
 import CustomCategoryPage from "./pages/customCategoryPage";
 import EditCategoryPage from "./pages/editCategoryPage";
+import LoginPage from "./pages/loginPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
@@ -54,6 +55,10 @@ function App() {
     {
       path: '/editCategory',
       element: <EditCategoryPage/>
+    },
+    {
+      path: '/login',
+      element: <LoginPage/>
     },
   ])
 

@@ -8,18 +8,41 @@ import { useState, useEffect } from "react";
 export default function Dashboard() {
   const [items, setItems] = useState([]);
   const [dataIsLoaded, setDataIsLoaded] = useState(false);
-  var Number_systems;
+  const [numberSystems, setNumberSystems] = useState(0);
 
-  //add api route here
   useEffect(() => {
-    fetch("")
-      .then((res) => res.json())
-      .then((json) => {
-        setItems(json);
+    // Fetch data from the API when the component mounts
+    const fetchData = async () => {
+      try {
+        // const response = await fetch("/api/your-endpoint"); // Replace with your actual API endpoint
+        // if (!response.ok) {
+        //   throw new Error("Network response was not ok");
+        // }
+        // const data = await response.json();
+        const data = {
+          name: "Test Report A",
+          date: "2024-09-14",
+          time: "15:30",
+          systems: [
+            "System1",
+            "System2",
+            "System3",
+          ],
+          pass: 100,
+          fail: 200,
+        };
+
+        setItems(data);
         setDataIsLoaded(true);
-        // Number_systems = items.systems.length
-      });
-  }, []);
+        setNumberSystems(data.systems.length); // Assuming data.systems is an array
+      } catch (error) {
+        console.error("Failed to fetch data:", error);
+        setDataIsLoaded(true); // Ensure loading state is updated even on error
+      }
+    };
+
+    fetchData();
+  }, []); // Empty dependency array ensures this runs once on mount
 
   if (!dataIsLoaded) {
     return (
@@ -45,7 +68,9 @@ export default function Dashboard() {
               <li className="text-muted-foreground font-medium">
                 Time: {items.time}
               </li>
-              {/* <li className="text-muted-foreground font-medium">Systems: {items.systems.join(",")}</li> */}
+              {/* <li className="text-muted-foreground font-medium">
+                Systems: {items.systems}
+              </li> */}
             </ul>
           </div>
           <div>
@@ -54,9 +79,9 @@ export default function Dashboard() {
         </div>
         <div className="flex flex-col gap-4">
           <div className="bg-accent rounded-lg h-max p-5 shadow-md flex-grow">
-            <h3 className="text-3xl font-semibold">Available Systems</h3>
+            <h3 className="text-3xl text-center font-semibold">Tested Systems</h3>
             <div className="text-9xl text-primary text-center font-semibold">
-              {Number_systems}
+              {numberSystems}
             </div>
           </div>
           <div className="flex gap-4 self-center flex-grow">
@@ -79,4 +104,7 @@ export default function Dashboard() {
       </div>
     </div>
   );
+
+
+  
 }
