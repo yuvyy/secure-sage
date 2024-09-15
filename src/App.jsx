@@ -7,6 +7,7 @@ import ThemeToggle from "./Components/themeToggle";
 import LoginPage from "./pages/loginPage";
 import ProfilePage from "./pages/profilePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RemediationPage from "./pages/remediationPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,29 +35,13 @@ function App() {
       path: "/profile",
       element: <ProfilePage />,
     },
-    // {
-    //   path: '/newGroup',
-    //   element: <NewGroupPage/>
-    // },
-    // {
-    //   path: '/newSystem',
-    //   element: <NewSystemPage/>
-    // },
-    // {
-    //   path: '/editGroup',
-    //   element: <EditGroupPage/>
-    // },
-    // {
-    //   path: '/customCategory',
-    //   element: <CustomCategoryPage/>
-    // },
-    // {
-    //   path: '/editCategory',
-    //   element: <EditCategoryPage/>
-    // },
     {
       path: "/login",
       element: <LoginPage />,
+    },
+    {
+      path: "/remediate",
+      element: <RemediationPage />,
     },
   ]);
 

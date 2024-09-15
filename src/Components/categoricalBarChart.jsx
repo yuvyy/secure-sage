@@ -20,13 +20,21 @@ import {
 // export const description = "A stacked bar chart with a legend"
 
 const chartData = [
-  { month: "January", pass: 186, fail: 80 },
-  { month: "February", pass: 305, fail: 200 },
-  { month: "March", pass: 237, fail: 120 },
-  { month: "April", pass: 73, fail: 190 },
-  { month: "May", pass: 209, fail: 130 },
-  { month: "June", pass: 214, fail: 140 },
-]
+  { category: "Cat 1", pass: 186, fail: 80 },
+  { category: "Cat 2", pass: 305, fail: 200 },
+  { category: "Cat 3", pass: 237, fail: 120 },
+  { category: "Cat 4", pass: 73, fail: 190 },
+  { category: "Cat 5", pass: 209, fail: 130 },
+  { category: "Cat 6", pass: 214, fail: 140 },
+  { category: "Cat 7", pass: 214, fail: 140 },
+  { category: "Cat 8", pass: 214, fail: 140 },
+  { category: "Cat 9", pass: 214, fail: 140 },
+  { category: "Cat 10", pass: 214, fail: 140 },
+  { category: "Cat 11", pass: 214, fail: 140 },
+  { category: "Cat 12", pass: 214, fail: 140 },
+  { category: "Cat 13", pass: 214, fail: 140 },
+  { category: "Cat 14", pass: 214, fail: 140 },
+];
 
 const chartConfig = {
   pass: {
@@ -51,11 +59,11 @@ export default function CategoricalBarChart() {
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
-              dataKey="month"
+              dataKey="category"
               tickLine={false}
               tickMargin={10}
               axisLine={false}
-              tickFormatter={(value) => value.slice(0, 3)}
+              // tickFormatter={(value) => value.slice(0, 3)}
             />
             <ChartTooltip content={<ChartTooltipContent hideLabel />} />
             <ChartLegend content={<ChartLegendContent />} />
@@ -77,10 +85,10 @@ export default function CategoricalBarChart() {
       </CardContent>
       {/* <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Trending up by 5.2% this cat <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+          Showing total visitors for the last 6 categorys
         </div>
       </CardFooter> */}
     </Card>

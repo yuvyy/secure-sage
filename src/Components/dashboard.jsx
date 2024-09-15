@@ -67,7 +67,6 @@ export default function Dashboard() {
     <>
       <div className="flex flex-row align-middle justify-between p-5">
         <h2 className="text-primary text-5xl font-semibold">Dashboard</h2>
-
         <ProfileDropDown />
       </div>
 
