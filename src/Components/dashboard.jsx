@@ -7,17 +7,7 @@ import { useState, useEffect } from "react";
 import LogComponent from "./LogComponent";
 import DashNew from "./dashNew";
 import ProfileDropDown from "./ProfileDropDown";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+;
 // import TestSelector from "./testSelector";
 import NewTestForm from "./newTestForm";
 export default function Dashboard() {
@@ -113,27 +103,14 @@ export default function Dashboard() {
                   </label>
                 </div>
               </Button>
-              <AlertDialog>
-                <AlertDialogTrigger>
-                  <Button variant="outline" className="size-38" asChild>
-                    <div className="flex flex-col items-center gap-2">
-                      <Plus className="text-primary h-24 w-24" />
-                      <label className="text-center">New Test</label>
-                    </div>
-                  </Button>
-                </AlertDialogTrigger>
-                <AlertDialogContent className="w-max">
-                  <AlertDialogHeader>
-                    <AlertDialogTitle>New System Form</AlertDialogTitle>
-                    <AlertDialogDescription>
-                      <NewTestForm />
-                    </AlertDialogDescription>
-                  </AlertDialogHeader>
-                  <AlertDialogFooter>
-                    <AlertDialogCancel>Cancel</AlertDialogCancel>
-                  </AlertDialogFooter>
-                </AlertDialogContent>
-              </AlertDialog>
+              <Link to="/newTest" >
+                <Button variant="outline" className="size-38" asChild>
+                  <div className="flex flex-col items-center gap-2">
+                    <Plus className="text-primary h-24 w-24" />
+                    <label className="text-center">New Test</label>
+                  </div>
+                </Button>
+              </Link>
             </div>
           </div>
           <DashNew />

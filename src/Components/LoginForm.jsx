@@ -68,9 +68,11 @@ export default function LoginForm() {
                       placeholder="Enter password"
                     />
                   </div>
+                  <Link to="/dash" >
                   <Button type="submit" className="w-full">
-                    <Link to="/dash">Login</Link>
+                   Login
                   </Button>
+                  </Link>
                 </div>
                 <div className="mt-4 text-center text-lg">
                   New to SecureSage?{" "}

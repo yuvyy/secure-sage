@@ -1,6 +1,6 @@
 import AboutUsPage from "./pages/aboutUsPage";
 import HomePage from "./pages/homePage";
-import NewTestPage from "./Components/newTestForm";
+import NewTestPage from "./pages/newTestPage";
 import ReportsPage from "./pages/reportsPage";
 import ResultPage from "./pages/resultPage";
 import ThemeToggle from "./Components/themeToggle";
@@ -42,6 +42,10 @@ function App() {
     {
       path: "/remediate",
       element: <RemediationPage />,
+    },
+    {
+      path: "/newTest",
+      element: <NewTestPage />,
     },
   ]);
 

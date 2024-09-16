@@ -20,32 +20,25 @@ import {
 // export const description = "A stacked bar chart with a legend"
 
 const chartData = [
-  { category: "Cat 1", pass: 186, fail: 80 },
-  { category: "Cat 2", pass: 305, fail: 200 },
-  { category: "Cat 3", pass: 237, fail: 120 },
-  { category: "Cat 4", pass: 73, fail: 190 },
-  { category: "Cat 5", pass: 209, fail: 130 },
-  { category: "Cat 6", pass: 214, fail: 140 },
-  { category: "Cat 7", pass: 214, fail: 140 },
-  { category: "Cat 8", pass: 214, fail: 140 },
-  { category: "Cat 9", pass: 214, fail: 140 },
-  { category: "Cat 10", pass: 214, fail: 140 },
-  { category: "Cat 11", pass: 214, fail: 140 },
-  { category: "Cat 12", pass: 214, fail: 140 },
-  { category: "Cat 13", pass: 214, fail: 140 },
-  { category: "Cat 14", pass: 214, fail: 140 },
+  { category: "Category 1", pass: 186, fail: 80 },
+  { category: "Category 2", pass: 305, fail: 200 },
+  { category: "Category 3", pass: 237, fail: 120 },
+  { category: "Category 4", pass: 73, fail: 190 },
+  { category: "Category 5", pass: 209, fail: 130 },
+  { category: "Caegoryt 6", pass: 214, fail: 140 },
+  { category: "Category 7", pass: 214, fail: 140 },
 ];
 
 const chartConfig = {
   pass: {
     label: "Pass",
-    color: "hsl(var(--primary))",
+    color: "#1E5128",
   },
   fail: {
     label: "Fail",
     color: "hsl(var(--destructive))",
   },
-}
+};
 
 export default function CategoricalBarChart() {
   return (

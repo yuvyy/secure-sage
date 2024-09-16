@@ -35,7 +35,7 @@ export default function ProfileDropDown() {
           {/* <DropdownMenuItem>Settings</DropdownMenuItem> */}
           {/* <DropdownMenuItem>Support</DropdownMenuItem> */}
           {/* <DropdownMenuSeparator /> */}
-          <Link to="/login">
+          <Link to="/">
             <DropdownMenuLabel>Logout</DropdownMenuLabel>
           </Link>
         </DropdownMenuContent>

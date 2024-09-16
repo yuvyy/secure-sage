@@ -51,7 +51,7 @@ export default function DashNew() {
                 <TableCell className="text-right">
                   <AlertDialog>
                     <AlertDialogTrigger>
-                      <Button className="text-sm py-1 px-3">
+                      <Button className="text-sm py-1 px-3" variant="secondary">
                         <Plus />
                       </Button>
                     </AlertDialogTrigger>
@@ -78,7 +78,7 @@ export default function DashNew() {
                 <TableCell className="text-right">
                   <AlertDialog>
                     <AlertDialogTrigger>
-                      <Button className="text-sm py-1 px-3">
+                      <Button className="text-sm py-1 px-3" variant="secondary">
                         <Plus />
                       </Button>
                     </AlertDialogTrigger>
@@ -103,7 +103,7 @@ export default function DashNew() {
                 <TableCell className="text-right">
                   <AlertDialog>
                     <AlertDialogTrigger>
-                      <Button className="text-sm py-1 px-3">
+                      <Button className="text-sm py-1 px-3" variant="secondary">
                         <Pencil />
                       </Button>
                     </AlertDialogTrigger>
@@ -138,7 +138,7 @@ export default function DashNew() {
                 <TableCell className="text-right">
                   <AlertDialog>
                     <AlertDialogTrigger>
-                      <Button className="text-sm py-1 px-3">
+                      <Button className="text-sm py-1 px-3" variant="secondary">
                         <Plus />
                       </Button>
                     </AlertDialogTrigger>
@@ -165,7 +165,7 @@ export default function DashNew() {
                 <TableCell className="text-right">
                   <AlertDialog>
                     <AlertDialogTrigger>
-                      <Button className="text-sm py-1 px-3">
+                      <Button className="text-sm py-1 px-3" variant="secondary">
                         <Pencil />
                       </Button>
                     </AlertDialogTrigger>

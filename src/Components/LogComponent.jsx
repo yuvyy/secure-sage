@@ -29,34 +29,30 @@ export default function LogComponent() {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead>User</TableHead>
-              <TableHead className="hidden sm:table-cell">
-                System Number
-              </TableHead>
-              {/* <TableHead className="hidden sm:table-cell">Status</TableHead> */}
-              <TableHead className="hidden sm:table-cell">Activity</TableHead>
-              <TableHead className="hidden md:table-cell">Date</TableHead>
-              <TableHead className="text-right"></TableHead>
+              <TableHead>Test Name</TableHead>
+              <TableHead className="hidden sm:table-cell">Number of Systems</TableHead>
+              <TableHead className="hidden md:table-cell">Result</TableHead>
+              <TableHead className="">Date</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             <TableRow>
               <TableCell>
-                <div className="font-medium">Liam Johnson</div>
-                <div className="hidden text-sm text-muted-foreground md:inline">
+                <div className="font-medium">Sample Test 1</div>
+                {/* <div className="hidden text-sm text-muted-foreground md:inline">
                   liam@example.com
-                </div>
+                </div> */}
               </TableCell>
-              <TableCell className="hidden sm:table-cell">S1</TableCell>
+              <TableCell className="hidden sm:table-cell">10</TableCell>
               <TableCell className="hidden sm:table-cell">
-                <Badge className="text-xs" variant="secondary">
-                  Fulfilled
+                <Badge className="text-sm" variant="secondary">
+                 20%
                 </Badge>
               </TableCell>
               {/* <TableCell className="hidden md:table-cell">Retest</TableCell> */}
               <TableCell className="hidden md:table-cell">2023-06-23</TableCell>
               <TableCell className="text-right">
-                <Button>View Details</Button>
+                <Button variant="secondary">View Details</Button>
               </TableCell>
             </TableRow>
             <TableRow>
@@ -66,15 +62,15 @@ export default function LogComponent() {
                   olivia@example.com
                 </div>
               </TableCell>
-              <TableCell className="hidden sm:table-cell">S2</TableCell>
+              <TableCell className="hidden sm:table-cell">15</TableCell>
               <TableCell className="hidden sm:table-cell">
-                <Badge className="text-xs" variant="outline">
-                  Pending
+                <Badge className="text-sm" variant="outline">
+                 90%
                 </Badge>
               </TableCell>
               <TableCell className="hidden md:table-cell">2023-06-24</TableCell>
               <TableCell className="text-right">
-                <Button>View Details</Button>
+                <Button variant="secondary">View Details</Button>
               </TableCell>
             </TableRow>
           </TableBody>

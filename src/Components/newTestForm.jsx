@@ -75,9 +75,11 @@ export default function NewTestForm() {
 
   return (
     <>
-      <main className="border p-4 shadow-md rounded-lg w-[400px]">
-        <div className="flex flex-col gap-5  ">
-          <h1 className="text-primary text-3xl font-semibold">Perform Test</h1>
+      <h1 className="text-primary text-3xl font-semibold p-5">
+        Create a New Test
+      </h1>
+      <main className="border p-4 shadow-md rounded-lg w-full">
+        <div className="flex flex-col gap-5 justify-center ">
           <div>
             <label className="text-lg">Test Name</label>
             <Input value={testName} onChange={handleInputChange} className="" />
