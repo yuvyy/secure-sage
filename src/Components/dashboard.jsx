@@ -86,9 +86,9 @@ export default function Dashboard() {
                 <li className="text-muted-foreground font-medium">
                   Time: {items.time}
                 </li>
-                <li className="text-muted-foreground font-medium">
+                {/* <li className="text-muted-foreground font-medium">
                   Systems Tested: 23
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="pl-5">

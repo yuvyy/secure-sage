@@ -69,7 +69,7 @@ export default function LoginForm() {
                     />
                   </div>
                   <Button type="submit" className="w-full">
-                    Login
+                    <Link to="/dash">Login</Link>
                   </Button>
                 </div>
                 <div className="mt-4 text-center text-lg">

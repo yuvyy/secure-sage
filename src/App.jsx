@@ -12,7 +12,7 @@ import RemediationPage from "./pages/remediationPage";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/dash",
       element: <HomePage />,
     },
     {
@@ -36,7 +36,7 @@ function App() {
       element: <ProfilePage />,
     },
     {
-      path: "/login",
+      path: "/",
       element: <LoginPage />,
     },
     {
